@@ -4,6 +4,7 @@ body {
   font-size: 14px;
   max-width: 596px;
   margin: auto;
+  padding-right: 0 !important;
 }
 body nav #nav-tab i {
   padding-right: 5px;
@@ -144,12 +145,10 @@ body #nav-tabContent #content-insta #insta-content {
 }
 body #nav-tabContent #content-insta #insta-content .ligne {
   margin-bottom: 10px;
+  display: inline-flex;
 }
 body #nav-tabContent #content-insta #insta-content .ligne img {
   margin-right: 10px;
-}
-body #nav-tabContent #content-insta #insta-content .ligne img:first-of-type {
-  margin-left: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -4,6 +4,7 @@ body {
     font-size:14px;
     max-width: 596px;
     margin: auto;
+    padding-right: 0 !important;
 
     nav {
         #nav-tab {
@@ -177,12 +178,10 @@ body {
 
                 .ligne {
                     margin-bottom: 10px;
+                    display: inline-flex;
+
                     img {
                         margin-right: 10px;
-
-                        &:first-of-type {
-                            margin-left: 10px;
-                        }
                     }
                 }
             }
