@@ -121,7 +121,7 @@ body #nav-tabContent #story-insta .story-wrapper img:hover {
 body #nav-tabContent #content-insta {
   border-top: 1px solid lightgray;
   margin-top: 10px;
-  width: 590px;
+  width: 596px;
 }
 body #nav-tabContent #content-insta #nav-content-insta {
   border-bottom: none !important;
@@ -138,7 +138,7 @@ body #nav-tabContent #content-insta #nav-content-insta .nav-link.active {
 }
 body #nav-tabContent #content-insta #insta-content {
   height: 370px;
-  width: 596px;
+  width: 590px;
   overflow-y: scroll;
   scrollbar-color: grey lightgrey;
   scrollbar-width: thin;
