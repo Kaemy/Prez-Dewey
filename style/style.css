@@ -3,6 +3,7 @@ body {
   background-color: transparent;
   font-size: 14px;
   max-width: 596px;
+  margin: auto;
 }
 body nav #nav-tab i {
   padding-right: 5px;
