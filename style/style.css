@@ -1,10 +1,20 @@
 body {
   max-height: 600px;
   background-color: transparent;
-  font-size: 14px;
+  font-size: 12px;
   max-width: 596px;
   margin: auto;
   padding-right: 0 !important;
+}
+body heart {
+  cursor: pointer;
+  display: block;
+  height: 80px;
+  width: 80px;
+  margin: 0px auto;
+  background-size: auto 100%;
+  background-position: 0 0;
+  background-image: url(https://abs.twimg.com/a/1446304541/img/t1/web_heart_animation.png);
 }
 body nav #nav-tab i {
   padding-right: 5px;
@@ -149,6 +159,22 @@ body #nav-tabContent #content-insta #insta-content .ligne {
 }
 body #nav-tabContent #content-insta #insta-content .ligne img {
   margin-right: 10px;
+}
+body #nav-tabContent #content-insta #insta-content .ligne .grid-modal {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "img img texte texte" "img img comm comm" ". . . .";
+}
+body #nav-tabContent #content-insta #insta-content .ligne .grid-modal .img-modal {
+  grid-area: img;
+}
+body #nav-tabContent #content-insta #insta-content .ligne .grid-modal .text-modal {
+  grid-area: texte;
+}
+body #nav-tabContent #content-insta #insta-content .ligne .grid-modal .comm-modal {
+  grid-area: comm;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,10 +1,21 @@
 body {
     max-height: 600px;
     background-color: transparent;
-    font-size:14px;
+    font-size:12px;
     max-width: 596px;
     margin: auto;
     padding-right: 0 !important;
+
+    heart{
+        cursor: pointer;
+        display: block;
+        height: 80px;
+        width: 80px;
+        margin: 0px auto;
+        background-size: auto 100%;
+        background-position: 0 0;
+        background-image: url(https://abs.twimg.com/a/1446304541/img/t1/web_heart_animation.png);
+      }
 
     nav {
         #nav-tab {
@@ -182,6 +193,29 @@ body {
 
                     img {
                         margin-right: 10px;
+                    }
+
+                    .grid-modal {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr 1fr;
+                        grid-template-rows: 1fr 1fr 1fr;
+                        gap: 0px 0px;
+                        grid-template-areas:
+                            "img img texte texte"
+                            "img img comm comm"
+                            ". . . .";
+
+                        .img-modal {
+                            grid-area: img;
+                        }
+
+                        .text-modal {
+                            grid-area: texte;
+                        }
+
+                        .comm-modal {
+                            grid-area: comm;
+                        }
                     }
                 }
             }
