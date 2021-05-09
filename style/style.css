@@ -6,12 +6,15 @@ body {
   margin: auto;
   padding-right: 0 !important;
 }
+body .blue {
+  color: lightskyblue;
+}
 body heart {
   cursor: pointer;
-  display: block;
+  display: inline-block;
   height: 80px;
   width: 80px;
-  margin: 0px auto;
+  margin: 0;
   background-size: auto 100%;
   background-position: 0 0;
   background-image: url(https://abs.twimg.com/a/1446304541/img/t1/web_heart_animation.png);
@@ -79,6 +82,7 @@ body #nav-tabContent #profil-insta .texte-profil .button-modif {
   margin: 8px 5px 0 15px;
   text-align: center;
   cursor: pointer;
+  padding-top: 2px;
 }
 body #nav-tabContent #profil-insta .texte-profil .icon-option {
   grid-column: 3;
@@ -103,6 +107,8 @@ body #nav-tabContent #profil-insta .texte-profil .infos-profil .localisation {
 }
 body #nav-tabContent #story-insta {
   display: inline-flex;
+  justify-content: center;
+  width: 100%;
 }
 body #nav-tabContent #story-insta .story-wrapper {
   display: grid;
@@ -160,12 +166,19 @@ body #nav-tabContent #content-insta #insta-content .ligne {
 body #nav-tabContent #content-insta #insta-content .ligne img {
   margin-right: 10px;
 }
+body #nav-tabContent #content-insta #insta-content .ligne .modal-body {
+  padding: 10px 5px 5px 5px;
+}
+body #nav-tabContent #content-insta #insta-content .ligne .modal-title {
+  margin-left: 45px;
+  line-height: 0.5;
+}
 body #nav-tabContent #content-insta #insta-content .ligne .grid-modal {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 100px;
   gap: 0px 0px;
-  grid-template-areas: "img img texte texte" "img img comm comm" ". . . .";
+  grid-template-areas: "img img texte texte" "img img comm comm";
 }
 body #nav-tabContent #content-insta #insta-content .ligne .grid-modal .img-modal {
   grid-area: img;
@@ -173,8 +186,25 @@ body #nav-tabContent #content-insta #insta-content .ligne .grid-modal .img-modal
 body #nav-tabContent #content-insta #insta-content .ligne .grid-modal .text-modal {
   grid-area: texte;
 }
+body #nav-tabContent #content-insta #insta-content .ligne .grid-modal .text-modal .ava-mini-modal {
+  width: 10%;
+  border-radius: 50%;
+}
 body #nav-tabContent #content-insta #insta-content .ligne .grid-modal .comm-modal {
   grid-area: comm;
+}
+body #nav-tabContent #content-insta #insta-content .ligne .grid-modal .comm-modal .sprite-modal {
+  vertical-align: bottom !important;
+  cursor: pointer;
+  margin-right: 30px;
+  margin-left: 10px;
+}
+body #nav-tabContent #content-insta #insta-content .ligne .grid-modal .comm-modal .sprite-modal:hover {
+  -webkit-transition: 2s;
+  transition: 2s;
+  -ms-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 
 /*# sourceMappingURL=style.css.map */
