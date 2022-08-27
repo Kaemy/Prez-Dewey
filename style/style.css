@@ -6,9 +6,11 @@ body {
   margin: auto;
   padding-right: 0 !important;
 }
+
 body .blue {
   color: lightskyblue;
 }
+
 body heart {
   cursor: pointer;
   display: inline-block;
@@ -19,64 +21,91 @@ body heart {
   background-position: 0 0;
   background-image: url(https://abs.twimg.com/a/1446304541/img/t1/web_heart_animation.png);
 }
+
 body nav #nav-tab i {
   padding-right: 5px;
 }
+
 body #nav-tabContent {
   padding: 5px 10px;
 }
+
 body #nav-tabContent #navbar-insta {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
 }
+
 body #nav-tabContent #navbar-insta .logo {
-  font-family: "Grand Hotel", cursive;
+  font-family: 'Grand Hotel', cursive;
   font-size: 28px;
+  letter-spacing: 2px;
 }
+
 body #nav-tabContent #navbar-insta .rechercher {
   font-family: FontAwesome;
   width: 200px;
   margin: 0px 45px 20px 65px;
 }
+
 body #nav-tabContent #navbar-insta .rechercher input {
   border-radius: 5px;
   height: 30px;
   margin-top: 5px;
+  letter-spacing: 2px;
+  font-style: italic;
 }
+
 body #nav-tabContent #navbar-insta .icon i {
   font-size: 24px;
   padding-top: 8px;
   padding-right: 5px;
 }
+
 body #nav-tabContent #navbar-insta .icon img {
   height: 28px;
   border-radius: 50px;
   margin-bottom: 10px;
   margin-left: 10px;
 }
+
 body #nav-tabContent #profil-insta {
   padding: 10px 5px 20px 5px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
 }
+
 body #nav-tabContent #profil-insta img {
   border-radius: 50%;
   width: 120px;
   margin: 5px 0 0 20px;
 }
+
 body #nav-tabContent #profil-insta .texte-profil {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
   margin-left: 40px;
 }
+
 body #nav-tabContent #profil-insta .texte-profil .pseudo {
   font-size: 26px;
   font-weight: lighter;
+  -ms-grid-column: 1;
   grid-column: 1;
+  -ms-grid-row: 1;
   grid-row: 1;
 }
+
 body #nav-tabContent #profil-insta .texte-profil .button-modif {
   border: 1px solid black;
   border-radius: 5px;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
   grid-column: 2/3;
+  -ms-grid-row: 1;
   grid-row: 1;
   height: 25px;
   margin: 8px 5px 0 15px;
@@ -84,37 +113,55 @@ body #nav-tabContent #profil-insta .texte-profil .button-modif {
   cursor: pointer;
   padding-top: 2px;
 }
+
 body #nav-tabContent #profil-insta .texte-profil .icon-option {
+  -ms-grid-column: 3;
   grid-column: 3;
+  -ms-grid-row: 1;
   grid-row: 1;
   font-size: 24px;
   margin-left: 10px;
   cursor: pointer;
 }
+
 body #nav-tabContent #profil-insta .texte-profil .infos-profil {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-column: 1/4;
+  -ms-grid-row: 2;
   grid-row: 2;
   margin-top: 0px;
 }
+
 body #nav-tabContent #profil-insta .texte-profil .infos-profil .number-insta strong {
   margin-left: 25px;
 }
+
 body #nav-tabContent #profil-insta .texte-profil .infos-profil .number-insta strong:first-of-type {
   margin-left: 0px;
 }
+
 body #nav-tabContent #profil-insta .texte-profil .infos-profil .localisation {
   margin-top: 15px;
 }
+
 body #nav-tabContent #story-insta {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
 }
+
 body #nav-tabContent #story-insta .story-wrapper {
+  display: -ms-grid;
   display: grid;
   margin-left: 40px;
   text-align: center;
 }
+
 body #nav-tabContent #story-insta .story-wrapper img {
   border-radius: 50%;
   border: 1px solid black;
@@ -123,10 +170,10 @@ body #nav-tabContent #story-insta .story-wrapper img {
   transition: 2s;
   cursor: pointer;
 }
+
 body #nav-tabContent #story-insta .story-wrapper img:hover {
   -webkit-transition: 2s;
   transition: 2s;
-  -ms-transform: rotate(360deg);
   -webkit-transform: rotate(360deg);
   transform: rotate(360deg);
   -webkit-filter: grayscale(100%);
@@ -134,24 +181,31 @@ body #nav-tabContent #story-insta .story-wrapper img:hover {
   -webkit-transition: 2s;
   transition: 2s;
 }
+
 body #nav-tabContent #content-insta {
   border-top: 1px solid lightgray;
   margin-top: 10px;
   width: 596px;
 }
+
 body #nav-tabContent #content-insta #nav-content-insta {
   border-bottom: none !important;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 body #nav-tabContent #content-insta #nav-content-insta .nav-link {
   text-transform: uppercase;
   background-color: transparent;
   border: none;
   border-radius: 0;
 }
+
 body #nav-tabContent #content-insta #nav-content-insta .nav-link.active {
   border-top: 1px solid black;
 }
+
 body #nav-tabContent #content-insta #insta-content {
   height: 370px;
   width: 590px;
@@ -159,52 +213,77 @@ body #nav-tabContent #content-insta #insta-content {
   scrollbar-color: grey lightgrey;
   scrollbar-width: thin;
 }
+
 body #nav-tabContent #content-insta #insta-content .ligne {
   margin-bottom: 10px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
 }
+
 body #nav-tabContent #content-insta #insta-content .ligne img {
   margin-right: 10px;
+  cursor: pointer;
 }
+
 body #nav-tabContent #content-insta #insta-content .ligne .modal-body {
   padding: 10px 5px 5px 5px;
 }
+
 body #nav-tabContent #content-insta #insta-content .ligne .modal-title {
   margin-left: 45px;
   line-height: 0.5;
 }
+
 body #nav-tabContent #content-insta #insta-content .ligne .grid-modal {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 100px;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 100px;
+      grid-template-rows: 1fr 100px;
   gap: 0px 0px;
-  grid-template-areas: "img img texte texte" "img img comm comm";
+      grid-template-areas: "img img texte texte" "img img comm comm";
 }
+
 body #nav-tabContent #content-insta #insta-content .ligne .grid-modal .img-modal {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-area: img;
 }
+
 body #nav-tabContent #content-insta #insta-content .ligne .grid-modal .text-modal {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
   grid-area: texte;
 }
+
 body #nav-tabContent #content-insta #insta-content .ligne .grid-modal .text-modal .ava-mini-modal {
   width: 10%;
   border-radius: 50%;
 }
+
 body #nav-tabContent #content-insta #insta-content .ligne .grid-modal .comm-modal {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
   grid-area: comm;
 }
+
 body #nav-tabContent #content-insta #insta-content .ligne .grid-modal .comm-modal .sprite-modal {
   vertical-align: bottom !important;
   cursor: pointer;
   margin-right: 30px;
   margin-left: 10px;
 }
+
 body #nav-tabContent #content-insta #insta-content .ligne .grid-modal .comm-modal .sprite-modal:hover {
   -webkit-transition: 2s;
   transition: 2s;
-  -ms-transform: rotate(360deg);
   -webkit-transform: rotate(360deg);
   transform: rotate(360deg);
 }
-
 /*# sourceMappingURL=style.css.map */

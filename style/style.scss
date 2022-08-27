@@ -38,6 +38,7 @@ body {
             .logo {
                 font-family: 'Grand Hotel', cursive;
                 font-size: 28px;
+                letter-spacing: 2px;
             }
 
             .rechercher {
@@ -49,6 +50,8 @@ body {
                     border-radius: 5px;
                     height: 30px;
                     margin-top: 5px;
+                    letter-spacing: 2px;
+                    font-style: italic;
                 }
             }
 
@@ -200,6 +203,7 @@ body {
 
                     img {
                         margin-right: 10px;
+                        cursor: pointer;
                     }
 
                     .modal-body {
