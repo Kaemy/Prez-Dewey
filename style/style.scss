@@ -1,245 +1,250 @@
 body {
-    max-height: 600px;
-    background-color: transparent;
-    font-size: 12px;
-    max-width: 596px;
-    margin: auto;
-    padding-right: 0 !important;
-  
-    .blue {
-      color: lightskyblue;
+  max-height: 600px;
+  background-color: transparent;
+  font-size: 12px;
+  max-width: 596px;
+  margin: auto;
+  padding-right: 0 !important;
+
+  .blue {
+    color: lightskyblue;
+  }
+
+  heart {
+    cursor: pointer;
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    margin: 0;
+    background-size: auto 100%;
+    background-position: 0 0;
+    background-image: url(https://abs.twimg.com/a/1446304541/img/t1/web_heart_animation.png);
+  }
+
+  nav {
+    #nav-tab {
+      i {
+        padding-right: 5px;
+      }
     }
-  
-    heart {
-      cursor: pointer;
-      display: inline-block;
-      height: 80px;
-      width: 80px;
-      margin: 0;
-      background-size: auto 100%;
-      background-position: 0 0;
-      background-image: url(https://abs.twimg.com/a/1446304541/img/t1/web_heart_animation.png);
-    }
-  
-    nav {
-      #nav-tab {
+  }
+
+  #nav-tabContent {
+    padding: 5px 10px;
+
+    #navbar-insta {
+      display: inline-flex;
+
+      .logo {
+        font-family: 'Grand Hotel', cursive;
+        font-size: 28px;
+        letter-spacing: 2px;
+      }
+
+      .rechercher {
+        font-family: FontAwesome;
+        width: 200px;
+        margin: 0px 45px 20px 65px;
+
+        input {
+          border-radius: 5px;
+          height: 30px;
+          margin-top: 5px;
+          letter-spacing: 2px;
+          font-style: italic;
+        }
+      }
+
+      .icon {
         i {
+          font-size: 24px;
+          padding-top: 8px;
           padding-right: 5px;
         }
+
+        img {
+          height: 28px;
+          border-radius: 50px;
+          margin-bottom: 10px;
+        }
       }
     }
-  
-    #nav-tabContent {
-      padding: 5px 10px;
-  
-      #navbar-insta {
-        display: inline-flex;
-  
-        .logo {
-          font-family: 'Grand Hotel', cursive;
-          font-size: 28px;
-          letter-spacing: 2px;
+
+    #profil-insta {
+      padding: 10px 5px 20px 5px;
+      display: inline-flex;
+
+      img {
+        border-radius: 50%;
+        width: 120px;
+        margin: 5px 0 0 20px;
+      }
+
+      .texte-profil {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 40px;
+
+        .pseudo {
+          font-size: 26px;
+          font-weight: lighter;
+          grid-column: 1;
+          grid-row: 1;
         }
-  
-        .rechercher {
-          font-family: FontAwesome;
-          width: 200px;
-          margin: 0px 45px 20px 65px;
-  
-          input {
-            border-radius: 5px;
-            height: 30px;
-            margin-top: 5px;
-            letter-spacing: 2px;
-            font-style: italic;
-          }
+
+        .button-modif {
+          border: 1px solid black;
+          border-radius: 5px;
+          grid-column: 2/3;
+          grid-row: 1;
+          height: 25px;
+          margin: 8px 5px 0 15px;
+          text-align: center;
+          cursor: pointer;
+          padding-top: 2px;
         }
-  
-        .icon {
-          i {
-            font-size: 24px;
-            padding-top: 8px;
-            padding-right: 5px;
+
+        .icon-option {
+          grid-column: 3;
+          grid-row: 1;
+          font-size: 24px;
+          margin-left: 10px;
+          cursor: pointer;
+        }
+
+        .infos-profil {
+          grid-column: 1/4;
+          grid-row: 2;
+          margin-top: 0px;
+
+          .number-insta {
+            strong {
+              margin-left: 25px;
+
+              &:first-of-type {
+                margin-left: 0px;
+              }
+            }
           }
-  
-          img {
-            height: 28px;
-            border-radius: 50px;
-            margin-bottom: 10px;
-            margin-left: 10px;
+
+          .localisation {
+            margin-top: 15px;
           }
         }
       }
-  
-      #profil-insta {
-        padding: 10px 5px 20px 5px;
-        display: inline-flex;
-  
+    }
+
+    #story-insta {
+      display: inline-flex;
+      justify-content: center;
+      width: 100%;
+
+      .story-wrapper {
+        display: grid;
+        margin-left: 40px;
+        text-align: center;
+
         img {
           border-radius: 50%;
-          width: 120px;
-          margin: 5px 0 0 20px;
-        }
-  
-        .texte-profil {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          margin-left: 40px;
-  
-          .pseudo {
-            font-size: 26px;
-            font-weight: lighter;
-            grid-column: 1;
-            grid-row: 1;
-          }
-  
-          .button-modif {
-            border: 1px solid black;
-            border-radius: 5px;
-            grid-column: 2/3;
-            grid-row: 1;
-            height: 25px;
-            margin: 8px 5px 0 15px;
-            text-align: center;
-            cursor: pointer;
-            padding-top: 2px;
-          }
-  
-          .icon-option {
-            grid-column: 3;
-            grid-row: 1;
-            font-size: 24px;
-            margin-left: 10px;
-            cursor: pointer;
-          }
-  
-          .infos-profil {
-            grid-column: 1/4;
-            grid-row: 2;
-            margin-top: 0px;
-  
-            .number-insta {
-              strong {
-                margin-left: 25px;
-                &:first-of-type {
-                  margin-left: 0px;
-                }
-              }
-            }
-  
-            .localisation {
-              margin-top: 15px;
-            }
+          border: 1px solid black;
+          transition: transform 2s;
+          cursor: pointer;
+
+          &:hover {
+            transform: rotate(360deg);
+            filter: grayscale(100%);
+            transition: transform 2s;
           }
         }
       }
-  
-      #story-insta {
-        display: inline-flex;
+    }
+
+    #content-insta {
+      border-top: 1px solid lightgray;
+      margin-top: 10px;
+      width: 596px;
+
+      #nav-content-insta {
+        border-bottom: none !important;
         justify-content: center;
-        width: 100%;
-  
-        .story-wrapper {
-          display: grid;
-          margin-left: 40px;
-          text-align: center;
-  
-          img {
-            border-radius: 50%;
-            border: 1px solid black;
-            transition: 2s;
-            cursor: pointer;
-  
-            &:hover {
-              transition: 2s;
-              transform: rotate(360deg);
-              filter: grayscale(100%);
-            }
+
+        .nav-link {
+          text-transform: uppercase;
+          background-color: transparent;
+          border: none;
+          border-radius: 0;
+
+          &.active {
+            border-top: 1px solid black;
           }
         }
       }
-  
-      #content-insta {
-        border-top: 1px solid lightgray;
-        margin-top: 10px;
-        width: 596px;
-  
-        #nav-content-insta {
-          border-bottom: none !important;
-          justify-content: center;
-  
-          .nav-link {
-            text-transform: uppercase;
-            background-color: transparent;
-            border: none;
-            border-radius: 0;
-  
-            &.active {
-              border-top: 1px solid black;
-            }
+
+      #insta-content {
+        height: 370px;
+        width: 590px;
+        overflow-y: scroll;
+        scrollbar-color: grey lightgrey;
+        scrollbar-width: thin;
+
+        .ligne {
+          margin-bottom: 10px;
+          display: inline-flex;
+
+          img {
+            margin-right: 10px;
+            cursor: pointer;
           }
-        }
-  
-        #insta-content {
-          height: 370px;
-          width: 590px;
-          overflow-y: scroll;
-          scrollbar-color: grey lightgrey;
-          scrollbar-width: thin;
-  
-          .ligne {
-            margin-bottom: 10px;
-            display: inline-flex;
-  
-            img {
-              margin-right: 10px;
-              cursor: pointer;
+
+          .modal-body {
+            padding: 10px 5px 5px 5px;
+          }
+
+          .modal-title {
+            margin-left: 45px;
+            line-height: 0.5;
+          }
+
+          .grid-modal {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 1fr 100px;
+            gap: 0px 0px;
+            grid-template-areas:
+              "img img texte texte"
+              "img img comm comm";
+
+            .img-modal {
+              grid-area: img;
             }
-  
-            .modal-body {
-              padding: 10px 5px 5px 5px;
-            }
-  
-            .modal-title {
-              margin-left: 45px;
-              line-height: 0.5;
-            }
-  
-            .grid-modal {
-              display: grid;
-              grid-template-columns: repeat(4, 1fr);
-              grid-template-rows: 1fr 100px;
-              gap: 0px 0px;
-              grid-template-areas:
-                "img img texte texte"
-                "img img comm comm";
-  
-              .img-modal {
-                grid-area: img;
+
+            .text-modal {
+              grid-area: texte;
+
+              .ava-mini-modal {
+                width: 10%;
+                border-radius: 50%;
               }
-  
-              .text-modal {
-                grid-area: texte;
-  
-                .ava-mini-modal {
-                  width: 10%;
-                  border-radius: 50%;
-                }
+
+              .info-atk {
+                color: lightgray;
+                font-size: 10px;
+                font-style: italic;
               }
-  
-              .comm-modal {
-                grid-area: comm;
-  
-                .sprite-modal {
-                  vertical-align: bottom !important;
-                  cursor: pointer;
-                  margin-right: 30px;
-                  margin-left: 10px;
-  
-                  &:hover {
-                    transition: 2s;
-                    transform: rotate(360deg);
-                  }
+            }
+
+            .comm-modal {
+              grid-area: comm;
+
+              .sprite-modal {
+                vertical-align: bottom !important;
+                cursor: pointer;
+                margin-right: 30px;
+                margin-left: 10px;
+
+                &:hover {
+                  transform: rotate(360deg);
+                  transition: transform 2s;
                 }
               }
             }
@@ -248,4 +253,4 @@ body {
       }
     }
   }
-  
+}

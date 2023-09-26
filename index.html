@@ -8,18 +8,20 @@
     <link rel="stylesheet" href="https://www.aht.li/3461561/scrollbar.css">
     <script src="https://kit.fontawesome.com/28c95607bd.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Sirin+Stencil&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
     <title>Dewey - Présentation</title>
 </head>
 <body>
   <nav>
     <div class="nav nav-tabs" id="nav-tab" role="tablist">
-      <button class="nav-link active" id="nav-insta-tab" data-bs-toggle="tab" data-bs-target="#nav-insta" type="button" role="tab" aria-selected="true"><i class="fab fa-instagram"></i> Dewey P. Nightbringer (@GeyPadnom)</button>
-      <button class="nav-link" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-selected="false">Onglet2</button>
-      <button class="nav-link" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-selected="false">Onglet3</button>
+      <button class="nav-link active" id="nav-insta-tab" data-bs-toggle="tab" data-bs-target="#nav-insta" type="button" role="tab" aria-controls="nav-insta" aria-selected="true"><i class="fab fa-instagram"></i><span>Dewey P. Nightbringer (@GeyPadnom)</button>
+      <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Onglet2</button>
+      <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Onglet3</button>
     </div>
   </nav>
   <div class="tab-content" id="nav-tabContent">
-    <div class="tab-pane fade show active" id="nav-insta" role="tabpanel">
+    <div class="tab-pane fade show active" id="nav-insta" role="tabpanel" aria-labelledby="nav-insta-tab">
       <div id="navbar-insta">
         <div class="logo">Instagrom</div>
         <div class="rechercher">
@@ -62,30 +64,26 @@
       <div id="content-insta">
         <nav>
           <div id="nav-content-insta" class="nav nav-tabs" role="tablist">
-            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#nav-publi" type="button" role="tab" aria-selected="true">publications</button>
-            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#nav-deux" type="button" role="tab" aria-selected="false">Profile</button>
-            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#nav-trois" type="button" role="tab" aria-selected="false">Contact</button>
+            <button class="nav-link active" id="nav-publi-tab" data-bs-toggle="tab" data-bs-target="#nav-publi" type="button" role="tab" aria-controls="nav-publi" aria-selected="true">publications</button>
+            <button class="nav-link" id="nav-deux-tab" data-bs-toggle="tab" data-bs-target="#nav-deux" type="button" role="tab" aria-controls="nav-deux" aria-selected="false">Profile</button>
+            <button class="nav-link" id="nav-trois-tab" data-bs-toggle="tab" data-bs-target="#nav-trois" type="button" role="tab" aria-controls="nav-trois" aria-selected="false">Contact</button>
           </div>
         </nav>
         <div class="tab-content scroller" id="insta-content">
-          <div class="tab-pane fade show active" id="nav-publi" role="tabpanel">
-            <div class="ligne">
-              <div data-bs-toggle="modal" data-bs-target="#Mangriff"><img src="img/Mangriff-insta.png"/></div>
-              <!-- Modal -->
-              <div class="modal fade" id="Mangriff" tabindex="-1">
-                <!-- Modal content -->
-              </div>
-              <!-- Ajoutez les autres modals ici -->
-            </div>
-            <!-- Ajoutez les autres lignes ici -->
+          <div class="tab-pane fade show active" id="nav-publi" role="tabpanel" aria-labelledby="nav-publi-tab">
+            <!-- Vos publications ici -->
           </div>
-          <div class="tab-pane fade" id="nav-deux" role="tabpanel">Blabla content 2</div>
-          <div class="tab-pane fade" id="nav-trois" role="tabpanel">Blabla Content 3</div>
-        </div>
+          <div class="tab-pane fade" id="nav-deux" role="tabpanel" aria-labelledby="nav-deux-tab">Blabla content 2</div>
+          <div class="tab-pane fade" id="nav-trois" role="tabpanel" aria-labelledby="nav-trois-tab">Blabla Content 3</div>
+        </div>        
       </div>
     </div>
-    <div class="tab-pane fade" id="nav-profile" role="tabpanel">Blabla profile</div>
-    <div class="tab-pane fade" id="nav-contact" role="tabpanel">Blabla Contact</div>
+    <div class="tab-pane fade show" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+      Blabla profile
+    </div>
+    <div class="tab-pane fade show" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+      Blabla Contact
+    </div>
   </div>
   <!-- Javascript -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
