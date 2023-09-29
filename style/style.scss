@@ -221,6 +221,13 @@ body {
             .text-modal {
               grid-area: texte;
 
+              .descri {
+                display: inline-block;
+                height: 55px;
+                overflow: auto;
+                margin-top: 5px;
+                margin-bottom: 5px;
+              }
               .ava-mini-modal {
                 width: 10%;
                 border-radius: 50%;
@@ -229,6 +236,11 @@ body {
               .info-atk {
                 color: lightgray;
                 font-size: 10px;
+                font-style: italic;
+              }
+
+              .hashtag {
+                font-size: 11px;
                 font-style: italic;
               }
             }

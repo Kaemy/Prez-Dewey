@@ -181,6 +181,13 @@ body #nav-tabContent #content-insta #insta-content .ligne .grid-modal .img-modal
 body #nav-tabContent #content-insta #insta-content .ligne .grid-modal .text-modal {
   grid-area: texte;
 }
+body #nav-tabContent #content-insta #insta-content .ligne .grid-modal .text-modal .descri {
+  display: inline-block;
+  height: 55px;
+  overflow: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
 body #nav-tabContent #content-insta #insta-content .ligne .grid-modal .text-modal .ava-mini-modal {
   width: 10%;
   border-radius: 50%;
@@ -188,6 +195,10 @@ body #nav-tabContent #content-insta #insta-content .ligne .grid-modal .text-moda
 body #nav-tabContent #content-insta #insta-content .ligne .grid-modal .text-modal .info-atk {
   color: lightgray;
   font-size: 10px;
+  font-style: italic;
+}
+body #nav-tabContent #content-insta #insta-content .ligne .grid-modal .text-modal .hashtag {
+  font-size: 11px;
   font-style: italic;
 }
 body #nav-tabContent #content-insta #insta-content .ligne .grid-modal .comm-modal {
