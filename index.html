@@ -3,351 +3,902 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style/style.css"> <!-- Ajout du fichier SCSS compilé -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="https://www.aht.li/3461561/scrollbar.css">
     <script src="https://kit.fontawesome.com/28c95607bd.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Sirin+Stencil&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=WindSong&family=Sirin+Stencil&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
-    <title>Dewey - Présentation</title>
+    <title>Dewey P. Nightbringer - Présentation</title>
 </head>
 <body>
-  <nav>
-    <div class="nav nav-tabs" id="nav-tab" role="tablist">
-      <button class="nav-link active" id="nav-insta-tab" data-bs-toggle="tab" data-bs-target="#nav-insta" type="button" role="tab" aria-controls="nav-insta" aria-selected="true"><i class="fab fa-instagram"></i><span>Dewey P. Nightbringer (@GeyPadnom)</button>
-      <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Onglet2</button>
-      <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Onglet3</button>
+    <div id="Irina-sidebar">
+        <img class="imgrota" src="img/Dewey-avatar.png">
+        <div class="navigation">
+            <div class="blc-onglets">
+              <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="pills-link active" id="v-pills-perso-tab" data-toggle="pill" href="#v-pills-perso" role="tab" aria-controls="v-pills-perso" aria-selected="true"><i class="fab fa-odnoklassniki"></i><span>Dewey</span></a>
+                <a class="pills-link" id="v-pills-histoire-tab" data-toggle="pill" href="#v-pills-histoire" role="tab" aria-controls="v-pills-histoire" aria-selected="false"><i class="fas fa-hiking"></i><span>L'histoire</span></a>
+                <a class="pills-link" id="v-pills-team-tab" data-toggle="pill" href="#v-pills-team" role="tab" aria-controls="v-pills-ligue" aria-selected="false"><i class="fas fa-paw"></i><span>Equipe</span></a>
+                <a class="pills-link" id="v-pills-nom-tab" data-toggle="pill" href="#v-pills-nom" role="tab" aria-controls="v-pills-nom" aria-selected="false"><i class="fas fa-hiking"></i><span>Onglet</span></a>
+                <a class="pills-link" id="v-pills-rencontre-tab" data-toggle="pill" href="#v-pills-rencontre" role="tab" aria-controls="v-pills-rencontre" aria-selected="false"><i class="fas fa-users"></i><span>Social</span></a>
+              </div>
+            </div>
+        </div>
     </div>
-  </nav>
-  <div class="tab-content" id="nav-tabContent">
-    <div class="tab-pane fade show active" id="nav-insta" role="tabpanel" aria-labelledby="nav-insta-tab">
-      <div id="navbar-insta">
-        <div class="logo">Instagrom</div>
-        <div class="rechercher">
-          <input type="text" class="form-control" placeholder="&#xF002 Rechercher" aria-label="Rechercher">
-        </div>
-        <div class="icon">
-          <i class="fas fa-home"></i> <i class="fas fa-location-arrow"></i> <i class="far fa-compass"></i> <i class="far fa-heart"></i>
-          <img src="img/avatar-insta.png">
-        </div>
-      </div>
-      <div id="profil-insta">
-        <div class="image-profil">
-          <img src="img/avatar-insta.png">
-        </div>
-        <div class="texte-profil">
-          <div class="pseudo">GeyPadnom</div>
-          <div class="button-modif">Modifier profil</div>
-          <div class="icon-option"><i class="fas fa-cog"></i></div>
-          <div class="infos-profil">
-            <span class="number-insta"><strong>472 </strong> publications <strong>45,2k </strong> abonnés <strong>1711 </strong> abonnements</span><br/><br/>
-            <strong>Dewey P. Nightbringer</strong><br/>
-            <span>28 ans - <i class="fas fa-mars"></i> - Galérien au quotidien</span><br/><br/>
-            <span><i class="fas fa-beer"></i> Guide local <i>spécialisé en pubs et autres bars </i></span><br/>
-            <span>Dresseur de génie, à ses heures perdues</span><br/>
-            <span><i class="fas fa-clinic-medical"></i> Vétérinaire passionné <i>et talentueux</i> <i class="fas fa-crown"></i></span><br/>
-            <div class="localisation"><i class="fas fa-thumbtack"></i> <i>Kickenham, Galar</i></div>
+    <div class="col-9">
+        <div class="tab-content content-tc" id="v-pills-tabContent">
+          <div class="tab-pane fade show active" id="v-pills-perso" role="tabpanel" aria-labelledby="v-pills-perso-tab">
+            <div class="perso">
+              <div class="sprite"><img src="./img/Dewey-sprite.png"></div>
+              <div class="perso-infos">
+                ⚡︎ <u><i>Personnage sur l'avatar</i></u> : <i>Ichiro Yamada</i> de <i>Hypnosis Mic : Division Rap Battle</i><br/><br/>
+                ⚡︎ Grand passionné d'affrontements entre pokémons, il était très engagé dans le domaine des combats illégaux qui se déroulent régulièrement dans les rues sombres et les zones reculées de la 
+                ville de Smashings. Bien que loin désormais, il continue de garder un œil sur la communauté.<br/><br/>
+                ⚡︎ Blablablabla<br/>
+                ⚡︎ Blablablabla<br/>
+                ⚡︎ Blablablabla<br/>
+                ⚡︎ Blablablabla<br/>
+              </div>
+            </div>
+            <div class="perso-ident">Dewey P. Nightbringer • 28 ans • Vétérinaire / Dresseur</div>         
+            <div class="blocdescri">
+              <div class="descri-corps">
+                <p class="titre">Description physique et psychologique</p>
+                
+                <p class="card-text">
+                  À première vue, Gwenael représente pleinement l'archétype même du <strong>« gosse de riche »</strong> que tout le monde déteste, sans même prendre le temps de le connaître : grand, beau et populaire. 
+                  Toutefois, est-ce que cette maigre description tend effectivement à le représenter tel que dans la réalité des faits ? La réponse se veut simpliste : non. 
+                  Tout comme dans de nombreuses situations, il demeure un juste milieu, une sorte d'équilibre, entre le noir et le blanc qui est mis en avant un peu partout. 
+                  Il existe une multitude de variations entre ces deux extrêmes. Bien évidemment, il ne ressemble pas trait pour trait aux différents clichés que les médias présentent régulièrement. 
+                  Que ce soit dans les films, dans les diverses séries à destination d'un public d'adolescents ou encore au cœur de certains genres littéraires plus ou moins critiqués, 
+                  ils sont toujours représentés de la même manière. Les jeunes gens, qui sont issus d'un milieu social semblable à celui de Gwenael, sont régulièrement dépeints comme des êtres 
+                  particulièrement détestables. Gwen, quant à lui, il possède une complexité bien plus vaste que les apparences ne le laissent présager au premier abord, autant d'un point de vue psychologique 
+                  que physique.
+                  <br><br>
+                  Le jeune homme affiche une <strong>silhouette élancée</strong>. Ce n'est pas forcément ce qu'il aurait choisi si la vie lui avait offert la possibilité de déterminer son apparence, mais il n'a pas trop 
+                  à se plaindre. Et comme il n'a pas eu de flèches de sélection afin d'améliorer son avatar, il se débrouille comme il le peut avec son <strong>mètre quatre-vingt-neuf</strong>, qu'il a tendance à arrondir 
+                  au centimètre supérieur, et ses soixante-huit kilos tout mouillés. En fin de compte, il n'a tout de même pas trop à se plaindre de son apparence. Présentement, il n'éprouve pas plus de 
+                  complexes que cela vis-à-vis de sa taille. Ce serait peut-être le cas d'autres individus, mais Gwen est relativement satisfait de ce qui le constitue. Il ne s'estime ni trop grand, ni 
+                  trop petit. En public, il se trouve parfait, bien évidemment. Sur les réseaux sociaux, il affiche toujours des photographies de lui-même dans des angles qui permettent de le mettre en valeur. 
+                  Toutefois, dans la réalité de son intimité, il doit tout de même faire face à quelques petits complexes. Gwen a beau passer de nombreuses heures à s'entraîner à la salle de sport, 
+                  il ne parvient pas à gagner en volume dans les zones qu'il souhaite muscler. À son plus grand désespoir, ses gambettes restent longues et maigrelettes. C'est en outre pour cette raison 
+                  qu'il a tendance à se vêtir avec des pantalons larges qui ne moulent pas son corps. Il ne supporte pas cette impression de posséder des jambes en fil de fer que le miroir lui renvoie. 
+                  Il espère qu'un jour ses séances d'entraînement intensives lui permettront de corriger progressivement ce défaut afin d'éliminer ce petit complexe qui le dérange.
+                  <br><br>
+                  Pour le reste de son apparence, Gwenael est loin d'être à plaindre. Ce serait même tout le contraire. En effet, les jeunes femmes et plus généralement les individus qu'il croise ont tendance 
+                  à se retourner sur son passage pour l'observer plus en détail. Ils cherchent également des excuses plus ou moins fondées pour solliciter son attention. Il est possible que la fortune familiale 
+                  ne soit pas innocente dans cette affaire, mais le charme naturel de l'aîné Somerset est tout de même majoritairement fautif au sujet de ces divers comportements. Son visage, délicat et 
+                  triangulaire, est agencé de manière harmonieuse. Il est agrémenté d'un nez mince et de lèvres fines. Rien de bien extraordinaire à ce niveau-là, en somme. En y regardant de plus près, 
+                  on pourrait rapidement en venir à la conclusion que tout est mis en œuvre afin de promouvoir ses yeux qui sortent de l'ordinaire. Ce dernier, il le partage avec une grande partie de son arbre 
+                  généalogique. Gwen, tout comme son jeune frère, est touché par une anomalie oculaire que l'on nomme hétérochromie irienne génétique, si l'on reste dans les termes plus ou moins scientifiques 
+                  de cette spécificité. Dans un langage plus courant, les enfants de la famille Somerset ont les yeux vairons. À l'origine, l'iris droit de Gwen est teinté d'un beau vert émeraude tandis 
+                  que le second œil affiche une étrange nuance de noisette qui tire sur l'orange. Depuis quelques années, le jeune homme accentue le contraste et la différence en usant d'une lentille colorée 
+                  rouge afin de modifier son œil gauche.
+                  <br><br>
+                  ⚡︎ ⚡︎ ⚡︎  ⚡︎ ⚡︎ ⚡︎  ⚡︎ ⚡︎ ⚡︎  ⚡︎ ⚡︎ ⚡︎  ⚡︎ ⚡︎ ⚡︎
+                  <br><br>
+                  En ce qui concerne Gwenael, les choses sont relativement simples en fin de compte. Il n'existe pas véritablement de juste milieu dans le cadre des relations que les gens entretiennent avec 
+                  lui : soit ils le trouvent détestable, soit ils l'apprécient. Si ce fait peut sembler particulièrement extrême et exagéré (et il l'est !), il est toutefois criant de vérité. Le jeune homme 
+                  ne compte que peu d'amis alors que ses dix doigts ne sont pas suffisants pour dénombrer les individus qui ont des difficultés à le supporter et n'hésitent pas à l'insulter en mettant à profit 
+                  toutes les occasions possibles. Il faut dire qu'il n'est pas forcément facile à côtoyer au quotidien. Par ailleurs, certains de ses comportements peuvent s'avérer être usants pour ses proches. 
+                  Il a tendance à vivre quelque peu dans son monde, sans véritablement se préoccuper des sentiments des gens autour de lui. Depuis quelques mois, il tente de faire des efforts de ce côté-là. 
+                  Ce n'est toutefois pas une grande réussite jusqu'à présent.
+                  <br><br>
+                  En parlant de sa psychologie, l'une des premières choses à savoir est que le jeune homme est intelligent. C'est un fait, et quoi que l'on puisse dire ou faire, cela ne changera pas. Il possède 
+                  d'impressionnantes facultés cérébrales qui ont causé de nombreux soucis dans son enfance et provoqués d'importantes difficultés dans le cadre de sa scolarité. Depuis son plus jeune âge, ou 
+                  presque, Gwenael a toujours été un partisan du moindre effort. Ainsi, il s'est toujours contenté de faire le minimum en ce qui concerne ses activités et devoirs scolaires. Il appartient à la 
+                  catégorie de ceux qui ont la chance de ne pas ressentir de difficultés particulières lorsqu'il souhaite acquérir de nouvelles connaissances. Il a tendance à retenir les informations simplement 
+                  en accordant une attention limitée aux propos de ses professeurs. Ainsi, à l'école, il consacrait la majorité de son temps à la distraction de ses camarades et à l'apport d'une certaine 
+                  indiscipline dans les cours auxquels il daignait assister. Pour son comportement en classe, il s'est par ailleurs fait exclure temporairement à différentes reprises de l'établissement. 
+                  Seule la fortune familiale a pu lui permettre de conserver sa place au cœur de la prestigieuse école privée dans laquelle ses parents ont finalement décidé de l'inscrire. Bien qu'elle soit un 
+                  peu éloignée de la demeure familiale et qu'elle impose la pension complète, cette école, qui se situe à l'est de Kickenham, est rapidement devenue la seule solution envisageable pour les 
+                  enfants de la famille Somerset. Parce que bien évidemment, il est impensable pour le Duc de Brasswick, que ses chers enfants puissent côtoyer de simples roturiers au cours de leur scolarité.
+                  <br><br>
+                  Il ne fait désormais plus aucun doute que Gwenael est un fin stratège. Il semblerait que ce soit un talent plus ou moins inné chez lui. Ce qui est certain, c'est que cette qualité, ou ce trait 
+                  de personnalité, selon le point de vue, n'est pas génétique. Son frère ne possède pas la moindre once de stratégie en lui et ne compte que sur la force brute de ses partenaires. Contrairement 
+                  à la richesse et la notoriété, il s'agit donc d'un petit truc rien qu'à lui. Concernant son amour pour la stratégie, tout semble avoir débuté à la suite d'une punition infligée par les 
+                  responsables de son école. Après avoir cassé, plus ou moins volontairement, une fenêtre à l'aide d'un ballon, il s'est retrouvé affublé d'un professeur particulier durant toutes les périodes 
+                  de temps libre alors que ses petits camarades jouaient à l'extérieur. Ce professeur, originaire de la région de Johto, lui a transmis les règles fondamentales du shōgi, un jeu de société 
+                  traditionnel provenant de sa région. C'est de cette manière que Gwenael a succombé au plaisir de ce jeu et découvert son attrait pour la stratégie.
+                  <br><br>
+                  En matière de combats pokémons, ce sens de la stratégie se ressent notamment au niveau de ses types de prédilection. Calculateur dans l'âme, ses actions ont généralement pour objectif 
+                  d'atteindre leur but sur le long terme plutôt que d'infliger d'emblée des dégâts. Il va avoir tendance à agir dans l'ombre afin de surprendre au dernier moment ses adversaires avec ses 
+                  stratégies plus ou moins machiavéliques. Ce n'est donc finalement pas si étonnant qu'il se sente aussi proche des pokémons de types poison et ténèbres. Et si le jeune homme est reconnu 
+                  pour son sens de la stratégie, il doit toutefois faire face à un important problème : sa fainéantise. Il ne supporte pas de faire des efforts inutiles. Alors s'il sent que ce sera plus 
+                  épuisant qu'autre chose de réfléchir à une stratégie, il n'hésitera pas un seul instant à user de la force brute, comme son jeune frère sait si bien le faire. À la différence que Gwenael 
+                  est un dresseur, mais également un combattant aguerri, qui remporte la majorité de ses combats.
+                  <br><br>
+                  L'aîné de la famille Somerset est un modèle d'arrogance. Il a toujours eu en lui un certain talent pour afficher une expression hautaine ou pour traiter les gens avec une certaine 
+                  condescendance. Il n'a pas son pareil pour faire ressentir aux personnes qu'il n'estime pas être à son niveau qu'elles sont fades, ennuyeuses, voire carrément inutiles. 
+                  Depuis sa nomination à la ligue, il fait des efforts à ce niveau-là, mais c'est seulement pour que son nouvel agent imposé par le Comité cesse de lui casser les oreilles à longueur de temps 
+                  avec ses recommandations. Les habitudes bien ancrées ont toutefois la fâcheuse tendance à revenir au galop à la moindre baisse d'attention. Les principaux avantages que le jeune homme tire 
+                  de ce trait de sa personnalité sont sa confiance en soi à toute épreuve et sa résistance quasi imperméable aux diverses critiques qu'il peut recevoir. Ainsi, même dans la défaite, il ne 
+                  s'est presque jamais remis en cause. Il préfère généralement se dire que son adversaire était plus motivé que lui, ce qui n'est pas bien compliqué.
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div id="story-insta">
-        <div class="story-wrapper">
-          <img src="./img/Sprite-Dewey.png" alt="sprite-dewey"/>
-          <span><i>Sprite by Stegan</i></span>
-        </div>
-        <div class="story-wrapper">
-          <img src="./img/Mangriff.png" alt="sprite-mangriff"/>
-          <span><i>Sprite Starter</i></span>
-        </div>
-      </div>
-      <div id="content-insta">
-        <nav>
-          <div id="nav-content-insta" class="nav nav-tabs" role="tablist">
-            <button class="nav-link active" id="nav-publi-tab" data-bs-toggle="tab" data-bs-target="#nav-publi" type="button" role="tab" aria-controls="nav-publi" aria-selected="true">publications</button>
-            <button class="nav-link" id="nav-deux-tab" data-bs-toggle="tab" data-bs-target="#nav-deux" type="button" role="tab" aria-controls="nav-deux" aria-selected="false">Profile</button>
-            <button class="nav-link" id="nav-trois-tab" data-bs-toggle="tab" data-bs-target="#nav-trois" type="button" role="tab" aria-controls="nav-trois" aria-selected="false">Contact</button>
-          </div>
-        </nav>
-        <div class="tab-content scroller" id="insta-content">
-          <div class="tab-pane fade show active" id="nav-publi" role="tabpanel" aria-labelledby="nav-publi-tab">
-            <!-- Ligne pokémon-->
-            <div class="ligne">
-              <!-- Pokémon Gauche-->
-              <div data-bs-toggle="modal" data-bs-target="#Mangriff"><img src="img/Mangriff-insta.png"/></div>
-              <!-- Modal -->
-              <div class="modal fade" id="Mangriff" tabindex="-1" aria-labelledby="mangriffLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="mangriffLabel">► Loki ◄</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="tab-pane fade" id="v-pills-team" role="tabpanel" aria-labelledby="v-pills-team-tab">
+            <div class="content-pkmn">
+              <ul class="nav nav-pills mb-3" id="pkmn-tab1" role="tablist">
+                <li class="nav-item pkmnSbire">
+                  <a class="nav-link active" id="spkmn1" data-toggle="pill" href="#s-pkmn1" role="tab" aria-controls="s-pkmn1" aria-selected="false"><img src="./img/pokemon/mini/mangriff.png"></a>
+                </li>
+                <li class="nav-item pkmnSbire">
+                  <a class="nav-link" id="spkmn2" data-toggle="pill" href="#s-pkmn2" role="tab" aria-controls="s-pkmn2" aria-selected="false"><img src="./img/pokemon/mini/gruikui.png"></a>
+                </li>
+                <li class="nav-item pkmnSbire">
+                  <a class="nav-link" id="spkmn3" data-toggle="pill" href="#s-pkmn3" role="tab" aria-controls="s-pkmn3" aria-selected="true"><img src="./img/pokemon/mini/tiplouf.png"></a>
+                </li>
+                <li class="nav-item pkmnSbire">
+                  <a class="nav-link" id="spkmn4" data-toggle="pill" href="#s-pkmn4" role="tab" aria-controls="s-pkmn4" aria-selected="false"><img src="./img/pokemon/mini/skitty-m.png"></a>
+                </li>
+                <li class="nav-item pkmnSbire">
+                  <a class="nav-link" id="spkmn5" data-toggle="pill" href="#s-pkmn5" role="tab" aria-controls="s-pkmn5" aria-selected="false"><img src="./img/pokemon/mini/galekid.png"></a>
+                </li>
+                <li class="nav-item pkmnSbire">
+                  <a class="nav-link" id="spkmn6" data-toggle="pill" href="#s-pkmn6" role="tab" aria-controls="s-pkmn6" aria-selected="false"><img src="./img/pokemon/mini/ptitard.png"></a>
+                </li>
+                <li class="nav-item pkmnSbire">
+                  <a class="nav-link" id="spkmn7" data-toggle="pill" href="#s-pkmn7" role="tab" aria-controls="s-pkmn7" aria-selected="false"><img src="./img/pokemon/mini/mimejr.png"></a>
+                </li>
+                <li class="nav-item pkmnSbire">
+                  <a class="nav-link" id="spkmn8" data-toggle="pill" href="#s-pkmn8" role="tab" aria-controls="s-pkmn8" aria-selected="false"><img src="./img/pokemon/mini/larvibule.png"></a>
+                </li>
+                <li class="nav-item pkmnSbire">
+                  <a class="nav-link" id="spkmn9" data-toggle="pill" href="#s-pkmn9" role="tab" aria-controls="s-pkmn9" aria-selected="false"><img src="./img/pokemon/mini/wattouat.png"></a>
+                </li>
+                <li class="nav-item pkmnSbire">
+                  <a class="nav-link" id="spkmn10" data-toggle="pill" href="#s-pkmn10" role="tab" aria-controls="s-pkmn10" aria-selected="false"><img src="./img/pokemon/mini/pachirisu.png"></a>
+                </li>
+                <li class="nav-item pkmnSbire">
+                  <a class="nav-link" id="spkmn11" data-toggle="pill" href="#s-pkmn11" role="tab" aria-controls="s-pkmn11" aria-selected="false"><img src="./img/pokemon/mini/motisma.png"></a>
+                </li>
+                <li class="nav-item pkmnSbire">
+                  <a class="nav-link" id="spkmn12" data-toggle="pill" href="#s-pkmn12" role="tab" aria-controls="s-pkmn12" aria-selected="false"><img src="./img/pokemon/mini/togepi-m.png"></a>
+                </li>
+                <li class="nav-item pkmnSbire">
+                  <a class="nav-link" id="spkmn13" data-toggle="pill" href="#s-pkmn13" role="tab" aria-controls="s-pkmn13" aria-selected="false"><img src="./img/pokemon/mini/ramboum.png"></a>
+                </li>
+                <li class="nav-item pkmnSbire">
+                  <a class="nav-link" id="spkmn14" data-toggle="pill" href="#s-pkmn14" role="tab" aria-controls="s-pkmn14" aria-selected="false"><img src="./img/pokemon/mini/chovsourir-m.png"></a>
+                </li>
+              </ul>
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="s-pkmn1" role="tabpanel" aria-labelledby="spkmn1">
+                  <div class="grid-pkmn">
+                    <div class="pkmn-espece">Mangriff<i class="fas fa-mars"></i> </i> • Loki • Lvl 5 • <img class="type" src="./img/types/normal.png"/></div>
+                    <div class="sprite"><img src="./img/pokemon/sprites/Mangriff.png"></div>
+                    <div class="pkmn-infos">
+                      • Loki est le <span>premier</span> pokémon obtenu par Dewey.<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/><br/>
                     </div>
-                    <div class="modal-body">
-                      <div class="grid-modal">
-                        <div class="img-modal"><img src="img/Mangriff-insta2.png"/></div>
-                        <div class="text-modal">
-                          <img src="img/avatar-insta.png" class="ava-mini-modal"/>
-                          <strong>GeyPadnom</strong><br>
-                          <span class="descri">Description de la relation avec Loki. Description de la relation avec Loki. Description de la relation avec Loki. Description de la relation avec Loki. 
-                            Description de la relation avec Loki. Description de la relation avec Loki. Description de la relation avec Loki. Description de la relation avec Loki. 
-                            Description de la relation avec Loki. Description de la relation avec Loki. Description de la relation avec Loki.</span><br/>
-                          <span class="info-atk">CS Surf, Force et Éclate-Roc</span>
-                          <br/>
-                          <span class="hashtag">#Mangriff #Male #Nature #DO-AndrewMesnil</span>
-                        </div>
-                        <div class="comm-modal">
-                        <img src="./img/Mangriff.png" alt="sprite-mangriff" class="sprite-modal"/><heart></heart></div>
-                      </div>
+                    <div class="stats-pkmn">
+                      <div>Statistiques</div>
+                      <span>PV :</span> 73 + xx ⇢ <span>73</span><br/>
+                      <span>ATK :</span> 115 + xx ⇢ <span>115</span><br/>
+                      <span>DEF :</span> 60 + xx ⇢ <span>60</span><br/>
+                      <span>ATK S :</span> 60 + xx ⇢ <span>60</span><br/>
+                      <span>DEF S :</span> 60 + xx ⇢ <span>60</span><br/>
+                      <span>VIT :</span> 90 + xx ⇢ <span>90</span><br/><br/>
+                      00 pts à répartir<br/>
+                    </div>
+                    <div class="atk-pkmn">
+                      <div>Montée de niveau</div>
+                      <span class="normal">Griffe</span>
+                      <span class="normal">Groz'Yeux</span>
+                      <span class="normal">Vive-Attaque</span>
+                      <hr>
+                      <div>CS / CT / CR / CM</div>
+                      <span class="eau">[CS] Surf</span>
+                      <span class="normal">[CS] Force</span>
+                      <span class="combat">[CS] Éclate-Roc</span>
+                    </div>
+                    <div class="rela-pkmn">
+                      <i class="far fa-grin-beam"></i><img src="./img/pokemon/mini/ball.png"/><img src="./img/pokemon/mini/ball.png"/><br/>
+                      <i class="far fa-frown"></i><img src="./img/pokemon/mini/ball.png"/><img src="./img/pokemon/mini/ball.png"/><br/>
                     </div>
                   </div>
                 </div>
-              </div>
-              <!-- Pokémon central-->
-              <div data-bs-toggle="modal" data-bs-target="#GruikuiS"><img src="img/Gruikui-insta.png"/></div>
-              <div class="modal fade" id="GruikuiS" tabindex="-1" aria-labelledby="gruikuisLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="gruikuisLabel">► Porcinet ◄</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="tab-pane fade" id="s-pkmn2" role="tabpanel" aria-labelledby="spkmn2">
+                  <div class="grid-pkmn">
+                    <div class="pkmn-espece">Gruikui S <i class="fas fa-mars"></i> • Porcinet • Lvl 5 • <img class="type" src="./img/types/feu.png"/></div>
+                    <div class="sprite"><img src="./img/pokemon/sprites/GruikuiS.png"></div>
+                    <div class="pkmn-infos">
+                      • Blabla <span>blabla</span> blabla<br/>
+                      • Blabla <span>blabla</span> blabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/><br/>
                     </div>
-                    <div class="modal-body">
-                      <div class="grid-modal">
-                        <div class="img-modal"><img src="img/Gruikui-insta2.png"/></div>
-                        <div class="text-modal">
-                          <img src="img/avatar-insta.png" class="ava-mini-modal"/>
-                          <strong>GeyPadnom</strong><br> <i>Description de la relation avec Porcinet le Gruikui S</i><br/><br/>
-                          <span class="info-atk">CS blabla les attaques</span>
-                          <br/>
-                          <span class="hashtag">#Gruikui #Shiny #Male #Nature #DO-LottieMcOleksion</span>
-                        </div>
-                        <div class="comm-modal">
-                        <img src="./img/GruikuiS.png" alt="sprite-gruikuis" class="sprite-modal"/><heart></heart></div>
-                      </div>
+                    <div class="stats-pkmn">
+                      <div>Statistiques</div>
+                      <span>PV :</span> 65 + xx ⇢ <span>65</span><br/>
+                      <span>ATK :</span> 63 + xx ⇢ <span>63</span><br/>
+                      <span>DEF :</span> 45 + xx ⇢ <span>45</span><br/>
+                      <span>ATK S :</span> 45 + xx ⇢ <span>45</span><br/>
+                      <span>DEF S :</span> 45 + xx ⇢ <span>45</span><br/>
+                      <span>VIT :</span> 45 + xx ⇢ <span>45</span><br/><br/>
+                      00 pts à répartir<br/>
+                    </div>
+                    <div class="atk-pkmn">
+                      <div>Montée de niveau</div>
+                      <span class="normal">Charge</span>
+                      <span class="normal">Mimi-Queue</span>
+                      <hr>
+                      <div>CS / CT / CR / CM</div>
+                      <span class="normal">[CS] Force</span>
+                      <span class="combat">[CS] Éclate-Roc</span>
+                    </div>
+                    <div class="rela-pkmn">
+                      <i class="far fa-grin-beam"></i><img src="./img/pokemon/mini/ball.png"/><img src="./img/pokemon/mini/ball.png"/><br/>
+                      <i class="far fa-frown"></i><img src="./img/pokemon/mini/ball.png"/><img src="./img/pokemon/mini/ball.png"/><br/>
                     </div>
                   </div>
                 </div>
-              </div>
-              <!-- Pokémon Droite-->
-              <div data-bs-toggle="modal" data-bs-target="#MimeJR"><img src="img/MimeJR-insta.png"/></div>
-              <div class="modal fade" id="MimeJR" tabindex="-1" aria-labelledby="mimejrLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="mimejrLabel">► Surnom ◄</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="tab-pane fade" id="s-pkmn3" role="tabpanel" aria-labelledby="spkmn3">
+                  <div class="grid-pkmn">
+                    <div class="pkmn-espece">Tiplouf <i class="fas fa-mars"></i> • Corentin • Lvl 5 • <img class="type" src="./img/types/eau.png"/></div>
+                    <div class="sprite"><img src="./img/pokemon/sprites/tiplouf.png"></div>
+                    <div class="pkmn-infos">
+                      • Blabla <span>blabla</span> blabla<br/>
+                      • Blabla <span>blabla</span> blabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/><br/>
                     </div>
-                    <div class="modal-body">
-                      <div class="grid-modal">
-                        <div class="img-modal"><img src="img/MimeJR-insta2.png"/></div>
-                        <div class="text-modal">
-                          <img src="img/avatar-insta.png" class="ava-mini-modal"/>
-                          <strong>GeyPadnom</strong><br> <i>Description de la relation avec Mime Jr. S</i><br/><br/>
-                          <span class="info-atk">CM Vampipoing</span><br/>
-                          <br/>
-                          <span class="hashtag">#MimeJr #Shiny #Male #Nature #DO-AndrewMesnil</span>
-                        </div>
-                        <div class="comm-modal">
-                        <img src="./img/mimejr.png" alt="sprite-mimejr" class="sprite-modal"/><heart></heart></div>
-                      </div>
+                    <div class="stats-pkmn">
+                      <div>Statistiques</div>
+                      <span>PV :</span> 53 + xx ⇢ <span>109</span><br/>
+                      <span>ATK :</span> 51 + xx ⇢ <span>64</span><br/>
+                      <span>DEF :</span> 53 + xx ⇢ <span>91</span><br/>
+                      <span>ATK S :</span> 61 + xx ⇢ <span>103</span><br/>
+                      <span>DEF S :</span> 56 + xx ⇢ <span>83</span><br/>
+                      <span>VIT :</span> 40 + xx ⇢ <span>45</span><br/><br/>
+                      00 pts à répartir<br/>
+                    </div>
+                    <div class="atk-pkmn">
+                      <div>Montée de niveau</div>
+                      <span class="normal">Écras'Face</span>
+                      <span class="normal">Rugissement</span>
+                      <hr>
+                      <div>CS / CT / CR / CM</div>
+                      <span class="normal">[CS] Coupe</span>
+                      <span class="eau">[CS] Surf</span>
+                      <span class="eau">[CS] Cascade</span>
+                      <span class="vol">[CS] Anti-Brûme</span>
+                      <span class="insecte">[CM] Rayon Signal</span>
+                    </div>
+                    <div class="rela-pkmn">
+                      <i class="far fa-grin-beam"></i><img src="./img/pokemon/mini/ball.png"/><img src="./img/pokemon/mini/ball.png"/><br/>
+                      <i class="far fa-frown"></i><img src="./img/pokemon/mini/ball.png"/><img src="./img/pokemon/mini/ball.png"/><br/>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="s-pkmn4" role="tabpanel" aria-labelledby="spkmn4">
+                  <div class="grid-pkmn">
+                    <div class="pkmn-espece">Skitty <i class="fas fa-mars"></i> • Candy • Lvl 5 • <img class="type" src="./img/types/normal.png"/></div>
+                    <div class="sprite"><img src="./img/pokemon/sprites/Skitty.png"></div>
+                    <div class="pkmn-infos">
+                      • Blabla <span>blabla</span> blabla<br/>
+                      • Blabla <span>blabla</span> blabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/><br/>
+                    </div>
+                    <div class="stats-pkmn">
+                      <div>Statistiques</div>
+                      <span>PV :</span> 50 + xx ⇢ <span>50</span><br/>
+                      <span>ATK :</span> 45 + xx ⇢ <span>45</span><br/>
+                      <span>DEF :</span> 45 + xx ⇢ <span>45</span><br/>
+                      <span>ATK S :</span> 35 + xx ⇢ <span>35</span><br/>
+                      <span>DEF S :</span> 35 + xx ⇢ <span>35</span><br/>
+                      <span>VIT :</span> 50 + xx ⇢ <span>50</span><br/><br/>
+                      00 pts à répartir<br/>
+                    </div>
+                    <div class="atk-pkmn">
+                      <div>Montée de niveau</div>
+                      <span class="normal">Bluff</span>
+                      <span class="normal">Charge</span>
+                      <span class="normal">Mimi-Queue</span>
+                      <span class="normal">Rugissement</span>
+                      <span class="normal">Clairvoyance</span>
+                      <hr>
+                      <div>CS / CT / CR / CM</div>
+                      <span class="type">[CS] Attaque</span>
+                      <span class="type">[CS] Attaque</span>
+                    </div>
+                    <div class="rela-pkmn">
+                      <i class="far fa-grin-beam"></i><img src="./img/pokemon/mini/ball.png"/><img src="./img/pokemon/mini/ball.png"/><br/>
+                      <i class="far fa-frown"></i><img src="./img/pokemon/mini/ball.png"/><img src="./img/pokemon/mini/ball.png"/><br/>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="s-pkmn5" role="tabpanel" aria-labelledby="spkmn5">
+                  <div class="grid-pkmn">
+                    <div class="pkmn-espece">[OEUF] Galekid<i class="fas fa-mars"></i> <i class="fas fa-venus"></i> • Surnom • Lvl XX • <img class="type" src="./img/types/acier.png"/><img class="type" src="./img/types/roche.png"/></div>
+                    <div class="sprite"><img src="./img/pokemon/sprites/aron4.png"></div>
+                    <div class="pkmn-infos">
+                      • Blabla <span>blabla</span> blabla<br/>
+                      • Blabla <span>blabla</span> blabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/><br/>
+                    </div>
+                    <div class="stats-pkmn">
+                      <div>Statistiques</div>
+                      <span>PV :</span> 50 + xx ⇢ <span>50</span><br/>
+                      <span>ATK :</span> 70 + xx ⇢ <span>70</span><br/>
+                      <span>DEF :</span> 100 + xx ⇢ <span>100</span><br/>
+                      <span>ATK S :</span> 40 + xx ⇢ <span>40</span><br/>
+                      <span>DEF S :</span> 40 + xx ⇢ <span>40</span><br/>
+                      <span>VIT :</span> 30 + xx ⇢ <span>30</span><br/><br/>
+                      00 pts à répartir<br/>
+                    </div>
+                    <div class="atk-pkmn">
+                      <div>Montée de niveau</div>
+                      <span class="normal">Armure</span>
+                      <span class="normal">Charge</span>
+                      <span class="acier">Griffe Acier</span>
+                      <span class="roche">Tomberoche</span>
+                      <span class="normal">Hurlement</span>
+                      <hr>
+                      <div>CS / CT / CR / CM</div>
+                      <span class="type">[CS] Attaque</span>
+                      <span class="type">[CS] Attaque</span>
+                    </div>
+                    <div class="rela-pkmn">
+                      <i class="far fa-grin-beam"></i><img src="./img/pokemon/mini/ball.png"/><img src="./img/pokemon/mini/ball.png"/><br/>
+                      <i class="far fa-frown"></i><img src="./img/pokemon/mini/ball.png"/><img src="./img/pokemon/mini/ball.png"/><br/>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="s-pkmn6" role="tabpanel" aria-labelledby="spkmn6">
+                  <div class="grid-pkmn">
+                    <div class="pkmn-espece">Froussardine Banc <i class="fas fa-mars"></i> <i class="fas fa-venus"></i> • Surnom • Lvl 60 • <img class="type" src="./img/types/eau.png"/></div>
+                    <div class="sprite"><img src="./img/pokemon/sprites/Froussardine.png"></div>
+                    <div class="pkmn-infos">
+                      • Blabla <span>blabla</span> blabla<br/>
+                      • Blabla <span>blabla</span> blabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/><br/>
+                    </div>
+                    <div class="stats-pkmn">
+                      <div>Statistiques</div>
+                      <span>PV :</span> 45 + xx ⇢ <span>45</span><br/>
+                      <span>ATK :</span> 140 + xx ⇢ <span>140</span><br/>
+                      <span>DEF :</span> 130 + xx ⇢ <span>130</span><br/>
+                      <span>ATK S :</span> 140 + xx ⇢ <span>140</span><br/>
+                      <span>DEF S :</span> 135 + xx ⇢ <span>135</span><br/>
+                      <span>VIT :</span> 30 + xx ⇢ <span>30</span><br/><br/>
+                      xx pts à répartir<br/>
+                    </div>
+                    <div class="atk-pkmn">
+                      <div>Montée de niveau</div>
+                      <span class="eau">Pistolet à O</span>
+                      <span class="normal">Rugissement</span>
+                      <span class="normal">Coup d'Main</span>
+                      <span class="tenebres">Baston</span>
+                      <span class="eau">Saumure</span>
+                      <span class="normal">Larme à l'Oeil</span>
+                      <span class="eau">Plongée</span>
+                      <span class="eau">Détrempage</span>
+                      <span class="normal">Brouhaha</span>
+                      <span class="eau">Hydro-Queue</span>
+                      <span class="eau">Anneau Hydro</span>
+                      <span class="normal">Effort</span>
+                      <span class="eau">Hydrocanon</span>
+                      <span class="normal">Damoclès</span>
+                      <hr>
+                      <div>CS / CT / CR / CM</div>
+                      <span class="insecte">[CT] Demi-Tour</span>
+                      <span class="sol">[CT] Séisme</span>
+                      <span class="eau">[CT] Eau Revoir</span>
+                    </div>
+                    <div class="rela-pkmn">
+                      <i class="far fa-grin-beam"></i><img src="./img/pokemon/mini/ball.png"/><img src="./img/pokemon/mini/ball.png"/><br/>
+                      <i class="far fa-frown"></i><img src="./img/pokemon/mini/ball.png"/><img src="./img/pokemon/mini/ball.png"/><br/>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="s-pkmn7" role="tabpanel" aria-labelledby="spkmn7">
+                  <div class="grid-pkmn">
+                    <div class="pkmn-espece">[BOX] Épine-de-Fer S<i class="fas fa-mars"></i> • Surnom • Lvl 60 • <img class="type" src="./img/types/roche.png"/><img class="type" src="./img/types/electrik.png"/></div>
+                    <div class="sprite"><img src="./img/pokemon/sprites/EpinedeFer.png"></div>
+                    <div class="pkmn-infos">
+                      • Ne peut remplacer qu'un pokémon <span>shiny</span><br/><br/>
+                      • Blabla <span>blabla</span> blabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/><br/>
+                    </div>
+                    <div class="stats-pkmn">
+                      <div>Statistiques</div>
+                      <span>PV :</span> 100 + xx ⇢ <span>100</span><br/>
+                      <span>ATK :</span> 134 + xx ⇢ <span>134</span><br/>
+                      <span>DEF :</span> 110 + xx ⇢ <span>110</span><br/>
+                      <span>ATK S :</span> 70 + xx ⇢ <span>70</span><br/>
+                      <span>DEF S :</span> 84 + xx ⇢ <span>84</span><br/>
+                      <span>VIT :</span> 72 + xx ⇢ <span>72</span><br/><br/>
+                      xx pts à répartir<br/>
+                    </div>
+                    <div class="atk-pkmn">
+                      <div>Montée de niveau</div>
+                      <span class="electrik">Champ Électrifié</span>
+                      <span class="roche">Jet-Pierres</span>
+                      <span class="feu">Crocs Feu</span>
+                      <span class="electrik">Crocs Éclair</span>
+                      <span class="glace">Crocs Givre</span>
+                      <span class="acier">Mur de Fer</span>
+                      <span class="normal">Grincement</span>
+                      <span class="roche">Tomberoche</span>
+                      <span class="tenebres">Morsure</span>
+                      <span class="electrik">Chargeur</span>
+                      <span class="roche">Éboulement</span>
+                      <span class="roche">Tempête de Sable</span>
+                      <span class="electrik">Éclair Fou</span>
+                      <span class="insecte">Dard-Nuée</span>
+                      <span class="sol">Séisme</span>
+                      <span class="roche">Piège de Roc</span>
+                      <span class="roche">Lame de Roc</span>
+                      <span class="normal">Giga Impact</span>
+                      <hr>
+                      <div>CS / CT / CR / CM</div>
+                      <span class="combat">[CT] Casse-Brique</span>
+                      <span class="acier">[CT] Tête de Fer</span>
+                      <span class="dragon">[CT] Draco-Griffe</span>
+                    </div>
+                    <div class="rela-pkmn">
+                      <i class="far fa-grin-beam"></i><img src="./img/pokemon/mini/ball.png"/><img src="./img/pokemon/mini/ball.png"/><br/>
+                      <i class="far fa-frown"></i><img src="./img/pokemon/mini/ball.png"/><img src="./img/pokemon/mini/ball.png"/><br/>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="s-pkmn8" role="tabpanel" aria-labelledby="spkmn8">
+                  <div class="grid-pkmn">
+                    <div class="pkmn-espece">[BOX] Hyporoi <i class="fas fa-mars"></i> <i class="fas fa-venus"></i> • Surnom • Lvl 60 • <img class="type" src="./img/types/eau.png"/><img class="type" src="./img/types/dragon.png"/></div>
+                    <div class="sprite"><img src="./img/pokemon/sprites/Hyporoi.png"></div>
+                    <div class="pkmn-infos">
+                      • Blabla <span>blabla</span> blabla<br/>
+                      • Blabla <span>blabla</span> blabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/><br/>
+                    </div>
+                    <div class="stats-pkmn">
+                      <div>Statistiques</div>
+                      <span>PV :</span> 75 + xx ⇢ <span>75</span><br/>
+                      <span>ATK :</span> 95 + xx ⇢ <span>95</span><br/>
+                      <span>DEF :</span> 95 + xx ⇢ <span>95</span><br/>
+                      <span>ATK S :</span> 95 + xx ⇢ <span>95</span><br/>
+                      <span>DEF S :</span> 95 + xx ⇢ <span>95</span><br/>
+                      <span>VIT :</span> 85 + xx ⇢ <span>85</span><br/><br/>
+                      xx pts à répartir<br/>
+                    </div>
+                    <div class="atk-pkmn">
+                      <div>Montée de niveau</div>
+                      <span class="normal">Baîllement</span>
+                      <span class="normal">Brouillard</span>
+                      <span class="normal">Groz'Yeux</span>
+                      <span class="eau">Écume</span>
+                      <span class="eau">Pistolet à O</span>
+                      <span class="normal">Puissance</span>
+                      <span class="eau">Bulles d'O</span>
+                      <span class="psy">Hâte</span>
+                      <span class="dragon">Ouragan</span>
+                      <span class="eau">Saumure</span>
+                      <span class="eau">Hydrocanon</span>
+                      <span class="dragon">Danse Draco</span>
+                      <span class="dragon">Dracochoc</span>
+                      <hr>
+                      <div>CS / CT / CR / CM</div>
+                      <span class="type">[CT] Attaque</span>
+                    </div>
+                    <div class="rela-pkmn">
+                      <i class="far fa-grin-beam"></i><img src="./img/pokemon/mini/ball.png"/><img src="./img/pokemon/mini/ball.png"/><br/>
+                      <i class="far fa-frown"></i><img src="./img/pokemon/mini/ball.png"/><img src="./img/pokemon/mini/ball.png"/><br/>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="s-pkmn9" role="tabpanel" aria-labelledby="spkmn9">
+                  <div class="grid-pkmn">
+                    <div class="pkmn-espece">[BOX] Pharamp <i class="fas fa-mars"></i> <i class="fas fa-venus"></i> • Surnom • Lvl 60 • <img class="type" src="./img/types/electrik.png"/></div>
+                    <div class="sprite"><img src="./img/pokemon/sprites/Pharamp.png"></div>
+                    <div class="pkmn-infos">
+                      • Blabla <span>blabla</span> blabla<br/>
+                      • Blabla <span>blabla</span> blabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/><br/>
+                    </div>
+                    <div class="stats-pkmn">
+                      <div>Statistiques</div>
+                      <span>PV :</span> 90 + xx ⇢ <span>90</span><br/>
+                      <span>ATK :</span> 75 + xx ⇢ <span>75</span><br/>
+                      <span>DEF :</span> 85 + xx ⇢ <span>85</span><br/>
+                      <span>ATK S :</span> 115 + xx ⇢ <span>115</span><br/>
+                      <span>DEF S :</span> 90 + xx ⇢ <span>90</span><br/>
+                      <span>VIT :</span> 55 + xx ⇢ <span>55</span><br/><br/>
+                      xx pts à répartir<br/>
+                    </div>
+                    <div class="atk-pkmn">
+                      <div>Montée de niveau</div>
+                      <span class="normal">Charge</span>
+                      <span class="electrik">DélugePlasmique</span>
+                      <span class="electrik">Élecanon</span>
+                      <span class="electrik">Magné-Contrôle</span>
+                      <span class="feu">Poing de Feu</span>
+                      <span class="normal">Rugissement</span>
+                      <span class="electrik">Cage-Éclair</span>
+                      <span class="electrik">Éclair</span>
+                      <span class="palnte">Spore Coton</span>
+                      <span class="electrik">Chargeur</span>
+                      <span class="normal">Bélier</span>
+                      <span class="electrik">Boule Élek</span>
+                      <span class="spectre">Onde Folie</span>
+                      <span class="electrik">Poing-Éclair</span>
+                      <span class="roche">Rayon Gemme</span>
+                      <span class="electrik">Coup d'Jus</span>
+                      <span class="plante">Cotogarde</span>
+                      <span class="insecte">Rayon Signal</span>
+                      <span class="psy">Mur Lumière</span>
+                      <span class="electrik">Fatal-Foudre</span>
+                      <span class="dragon">Dracochoc</span>
+                      <hr>
+                      <div>CS / CT / CR / CM</div>
+                      <span class="combat">[CT] Casse-Brique</span>
+                    </div>
+                    <div class="rela-pkmn">
+                      <i class="far fa-grin-beam"></i><img src="./img/pokemon/mini/ball.png"/><img src="./img/pokemon/mini/ball.png"/><br/>
+                      <i class="far fa-frown"></i><img src="./img/pokemon/mini/ball.png"/><img src="./img/pokemon/mini/ball.png"/><br/>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="s-pkmn10" role="tabpanel" aria-labelledby="spkmn10">
+                  <div class="grid-pkmn">
+                    <div class="pkmn-espece">[BOX] Tarpaud <i class="fas fa-mars"></i> <i class="fas fa-venus"></i> • Côme • Lvl 60 • <img class="type" src="./img/types/eau.png"/><img class="type" src=""/></div>
+                    <div class="sprite"><img src="./img/pokemon/sprites/Tarpaud.png"></div>
+                    <div class="pkmn-infos">
+                      • Blabla <span>blabla</span> blabla<br/>
+                      • Blabla <span>blabla</span> blabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/><br/>
+                    </div>
+                    <div class="stats-pkmn">
+                      <div>Statistiques</div>
+                      <span>PV :</span> 90 + xx ⇢ <span>90</span><br/>
+                      <span>ATK :</span> 75 + xx ⇢ <span>75</span><br/>
+                      <span>DEF :</span> 75 + xx ⇢ <span>75</span><br/>
+                      <span>ATK S :</span> 90 + xx ⇢ <span>90</span><br/>
+                      <span>DEF S :</span> 100 + xx ⇢ <span>100</span><br/>
+                      <span>VIT :</span> 70 + xx ⇢ <span>70</span><br/><br/>
+                      xx pts à répartir<br/>
+                    </div>
+                    <div class="atk-pkmn">
+                      <div>Montée de niveau</div>
+                      <span class="eau">Bulles d'O</span>
+                      <span class="psy">Hypnose</span>
+                      <span class="normal">Requiem</span>
+                      <span class="normal">Torgnoles</span>
+                      <span class="normal">Vantardise</span>
+                      <span class="vol">Rebond</span>
+                      <span class="normal">Mégaphone</span>
+                      <span class="eau">Pistolet à O</span>
+                      <span class="eau">Écume</span>
+                      <span class="normal">Plaquage</span>
+                      <span class="normal">Cognobidon</span>
+                      <span class="combat">Réveil Forcé</span>
+                      <span class="eau">Hydrocanon</span>
+                      <span class="sol">Boue-Bombe</span>
+                      <hr>
+                      <div>CS / CT / CR / CM</div>
+                      <span class="psy">[CT] Psyko</span>
+                      <span class="type">[CT] Séisme</span>
+                      <span class="type">[CT] Larcin</span>
+                    </div>
+                    <div class="rela-pkmn">
+                      <i class="far fa-grin-beam"></i><img src="./img/pokemon/mini/ball.png"/><img src="./img/pokemon/mini/ball.png"/><br/>
+                      <i class="far fa-frown"></i><img src="./img/pokemon/mini/ball.png"/><img src="./img/pokemon/mini/ball.png"/><br/>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- Ligne pokémon-->
-            <div class="ligne">
-              <!-- Pokémon gauche -->
-              <div data-bs-toggle="modal" data-bs-target="#Galekid"><img src="img/Galekid-insta.png"/></div>
-              <div class="modal fade" id="Galekid" tabindex="-1" aria-labelledby="galekidLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="galekidLabel">► Surnom ◄</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <div class="grid-modal">
-                        <div class="img-modal"><img src="img/Galekid-insta2.png"/></div>
-                        <div class="text-modal">
-                          <img src="img/avatar-insta.png" class="ava-mini-modal"/>
-                          <strong>GeyPadnom</strong><br> <i>Cet oeuf de Galekid n'a pas encore éclot. Il bouge de temps en temps.</i><br/>
-                          <span class="info-atk">CS blabla les attaques</span><br/>
-                          <br/>
-                          <span class="hashtag">#Oeuf #Galekid #Shiny #Male #Nature #DO-AndrewMesnil</span>
-                        </div>
-                        <div class="comm-modal">
-                        <img src="./img/aron.png" alt="sprite-aron" class="sprite-modal"/><heart></heart></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Pokémon central-->
-              <div data-bs-toggle="modal" data-bs-target="#WattouatS"><img src="img/WattouatS-insta.png"/></div>
-              <div class="modal fade" id="WattouatS" tabindex="-1" aria-labelledby="wattouatLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="wattouatLabel">► Surnom ◄</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <div class="grid-modal">
-                        <div class="img-modal"><img src="img/WattouatS-insta2.png"/></div>
-                        <div class="text-modal">
-                          <img src="img/avatar-insta.png" class="ava-mini-modal"/>
-                          <strong>GeyPadnom</strong><br> <i>Description de la relation avec Wattouat S</i><br/>
-                          <br/>
-                          <span class="hashtag">#Wattouat #Shiny #Male  #Nature #DO-NessaFinnegan</span>
-                        </div>
-                        <div class="comm-modal">
-                        <img src="./img/Wattouat.png" alt="sprite-wattouats" class="sprite-modal"/><heart></heart></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--Pokémon droite-->
-              <div data-bs-toggle="modal" data-bs-target="#Ptitard"><img src="img/Ptitard-insta.png"/></div>
-              <div class="modal fade" id="Ptitard" tabindex="-1" aria-labelledby="ptitardLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="ptitardLabel">► Triton ◄</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <div class="grid-modal">
-                        <div class="img-modal"><img src="img/Ptitard-insta2.png"/></div>
-                        <div class="text-modal">
-                          <img src="img/avatar-insta.png" class="ava-mini-modal"/>
-                          <strong>GeyPadnom</strong><br> <i>Description de la relation avec Ptitard S</i><br/>
-                          <span class="info-atk">CT Laser Glace, / CS Surf et Cascade</span><br/>
-                          <br/>
-                          <span class="hashtag">#Ptitard #Shiny #Male #Nature #DO-ChikaoSakai</span>
-                        </div>
-                        <div class="comm-modal">
-                        <img src="./img/Ptitard.png" alt="sprite-ptitard" class="sprite-modal"/><heart></heart></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Ligne pokémon-->
-            <div class="ligne">
-              <!-- Pokémon gauche -->
-              <div data-bs-toggle="modal" data-bs-target="#Motisma"><img src="img/Motisma-insta.png"/></div>
-              <div class="modal fade" id="Motisma" tabindex="-1" aria-labelledby="motismaLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="motismaLabel">► Surnom ◄</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <div class="grid-modal">
-                        <div class="img-modal"><img src="img/Motisma-insta2.png"/></div>
-                        <div class="text-modal">
-                          <img src="img/avatar-insta.png" class="ava-mini-modal"/>
-                          <strong>GeyPadnom</strong><br> <i>Description de la relation avec Motisma</i><br/><br/>
-                          <span class="info-atk">CS blabla les attaques</span><br/>
-                          <br/>
-                          <span class="hashtag">#Motisma #Nature #DO-XXX</span>
-                        </div>
-                        <div class="comm-modal">
-                        <img src="./img/Motisma.png" alt="sprite-motisma" class="sprite-modal"/><heart></heart></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Pokémon central-->
-              <div data-bs-toggle="modal" data-bs-target="#PachirisuS"><img src="img/Pachirisu-insta.png"/></div>
-              <!-- Modal -->
-              <div class="modal fade" id="PachirisuS" tabindex="-1" aria-labelledby="pachirisusLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="pachirisusLabel">► Surnom ◄</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <div class="grid-modal">
-                        <div class="img-modal"><img src="img/Pachirisu-insta2.png"/></div>
-                        <div class="text-modal">
-                          <img src="img/avatar-insta.png" class="ava-mini-modal"/>
-                          <strong>GeyPadnom</strong><br> <i>Description de la relation avec Pachirusu S</i><br/><br/>
-                          <span class="info-atk">CS blabla les attaques</span><br/>
-                          <br/>
-                          <span class="hashtag">#Pachirisu #Shiny #Male #Nature #DO-NessaFinnegan</span>
-                        </div>
-                        <div class="comm-modal">
-                        <img src="./img/PachirisuS.png" alt="sprite-pachirisus" class="sprite-modal"/><heart></heart></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--Pokémon droite-->
-              <div data-bs-toggle="modal" data-bs-target="#LarvibuleS"><img src="img/Larvibule-insta.png"/></div>
-              <div class="modal fade" id="LarvibuleS" tabindex="-1" aria-labelledby="larvibulesLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="larvibuleLabel">► Surnom ◄</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <div class="grid-modal">
-                        <div class="img-modal"><img src="img/Larvibule-insta2.png"/></div>
-                        <div class="text-modal">
-                          <img src="img/avatar-insta.png" class="ava-mini-modal"/>
-                          <strong>GeyPadnom</strong><br> <i>Description de la relation avec Larvibule S</i><br/>
-                          <br/>
-                          <span class="hashtag">#Larvibule #Shiny #Male #Nature #DO-IlliaAethelhelm</span>
-                        </div>
-                        <div class="comm-modal">
-                        <img src="./img/LarvibuleS.png" alt="sprite-larvibules" class="sprite-modal"/><heart></heart></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- ... -->
-            <!-- Ajoutez le code pour les autres éléments ici -->
           </div>
-          <div class="tab-pane fade" id="nav-deux" role="tabpanel" aria-labelledby="nav-deux-tab">Blabla content 2
-            <div class="other">Les autres pokémons en sa possession :<br>
-              <span>• <img src="./img/Miniature/togepi-m.png" alt="togepi" class=""/> Togepi lvl 5 (0/1) - CM Rayon Signal</span><br>
-              <span>• <img src="./img/Miniature/baudrive-m.png" alt="baudrive" class=""/> Baudrive lvl 5 (0/1) - CS Anti-Brûme et Coupe</span><br>
-              <span>• <img src="./img/Miniature/malosse-m.png" alt="malosse" class=""/> Malosse lvl 5 (0/1) - CS Éclate-Roc</span><br>
-              <span>• <img src="./img/Miniature/ramboum-m.png" alt="ramboum" class=""/> Ramboum S lvl 5 (0/1) - CT Laser Glace, Surchauffe et Vibraqua / CS Éclate-Roc et Force</span><br>
-              <span>• <img src="./img/Miniature/seviper-m.png" alt="séviper" class=""/> Séviper S lvl 5 (0/1)</span><br>
-              <span>• <img src="./img/Miniature/chovsourir-m.png" alt="chovsourir" class=""/> Chovsourir S lvl 5 (0/1) - CR Coup d'Main, Échange Psy et Synchropeine / CS Anti-Brûme et Vol</span><br>
-              <span>• <img src="./img/Miniature/terhal-m.png" alt="terhal" class=""/> Terhal lvl 5 (0/1)</span><br>
-              <span>• <img src="./img/Miniature/herbizarre-m.png" alt="herbizarre" class=""/> Herbizarre lvl 5 (0/1) - CM Colère / CT Malédiction, Séisme, Force-Nature, Mega-Sangsue et Bomb-Beurk / CS Force, Coupe et Éclate-Roc</span><br>
-              <span>• <img src="./img/Miniature/flobio-m.png" alt="flobio" class=""/> Flobio lvl 5 (0/1) - CM Queue de Fer / CT Cradovague /CS Surf, Cascade, Force et Éclate-Roc</span><br>
-              <span>• <img src="./img/Miniature/skitty-m.png" alt="skitty" class=""/> Skitty lvl 5 (0/1)</span><br>
+          <div class="tab-pane fade" id="v-pills-histoire" role="tabpanel" aria-labelledby="v-pills-histoire-tab">
+            <div class="content-pkmn">      
+              <div class="perso-ident">Le passé de Dewey P. Nightbringer</div>
+              <div class="blocdescri">
+                <div class="descri-histoire">
+                  <p class="titre">Prologue</p>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu tincidunt tortor aliquam nulla facilisi. Diam ut venenatis tellus in metus 
+                    vulputate eu. Pulvinar elementum integer enim neque volutpat ac tincidunt vitae. Vestibulum mattis ullamcorper velit sed. Nisi vitae suscipit tellus mauris a diam maecenas sed. Sem fringilla ut morbi 
+                    tincidunt augue interdum. Elit pellentesque habitant morbi tristique. Dignissim cras tincidunt lobortis feugiat vivamus at. Nisl condimentum id venenatis a condimentum vitae sapien pellentesque. 
+                    Sodales ut etiam sit amet nisl purus in mollis nunc. Erat imperdiet sed euismod nisi. Proin fermentum leo vel orci. Magna fermentum iaculis eu non.
+                    <br><br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu tincidunt tortor aliquam nulla facilisi. Diam ut venenatis tellus in metus 
+                    vulputate eu. Pulvinar elementum integer enim neque volutpat ac tincidunt vitae. Vestibulum mattis ullamcorper velit sed. Nisi vitae suscipit tellus mauris a diam maecenas sed. Sem fringilla ut morbi 
+                    tincidunt augue interdum. Elit pellentesque habitant morbi tristique. Dignissim cras tincidunt lobortis feugiat vivamus at. Nisl condimentum id venenatis a condimentum vitae sapien pellentesque. 
+                    Sodales ut etiam sit amet nisl purus in mollis nunc. Erat imperdiet sed euismod nisi. Proin fermentum leo vel orci. Magna fermentum iaculis eu non.
+                    <br><br>
+                    ⚡︎ ⚡︎ ⚡︎  ⚡︎ ⚡︎ ⚡︎  ⚡︎ ⚡︎ ⚡︎  ⚡︎ ⚡︎ ⚡︎  ⚡︎ ⚡︎ ⚡︎
+                  </p>
+                  <p class="titre">Chapitre 1</p>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu tincidunt tortor aliquam nulla facilisi. Diam ut venenatis tellus in metus 
+                    vulputate eu. Pulvinar elementum integer enim neque volutpat ac tincidunt vitae. Vestibulum mattis ullamcorper velit sed. Nisi vitae suscipit tellus mauris a diam maecenas sed. Sem fringilla ut morbi 
+                    tincidunt augue interdum. Elit pellentesque habitant morbi tristique. Dignissim cras tincidunt lobortis feugiat vivamus at. Nisl condimentum id venenatis a condimentum vitae sapien pellentesque. 
+                    Sodales ut etiam sit amet nisl purus in mollis nunc. Erat imperdiet sed euismod nisi. Proin fermentum leo vel orci. Magna fermentum iaculis eu non.
+                    <br><br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu tincidunt tortor aliquam nulla facilisi. Diam ut venenatis tellus in metus 
+                    vulputate eu. Pulvinar elementum integer enim neque volutpat ac tincidunt vitae. Vestibulum mattis ullamcorper velit sed. Nisi vitae suscipit tellus mauris a diam maecenas sed. Sem fringilla ut morbi 
+                    tincidunt augue interdum. Elit pellentesque habitant morbi tristique. Dignissim cras tincidunt lobortis feugiat vivamus at. Nisl condimentum id venenatis a condimentum vitae sapien pellentesque. 
+                    Sodales ut etiam sit amet nisl purus in mollis nunc. Erat imperdiet sed euismod nisi. Proin fermentum leo vel orci. Magna fermentum iaculis eu non.
+                    <br><br>
+                    ⚡︎ ⚡︎ ⚡︎  ⚡︎ ⚡︎ ⚡︎  ⚡︎ ⚡︎ ⚡︎  ⚡︎ ⚡︎ ⚡︎  ⚡︎ ⚡︎ ⚡︎
+                  </p>
+                  <p class="titre">Chapitre 2</p>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu tincidunt tortor aliquam nulla facilisi. Diam ut venenatis tellus in metus 
+                    vulputate eu. Pulvinar elementum integer enim neque volutpat ac tincidunt vitae. Vestibulum mattis ullamcorper velit sed. Nisi vitae suscipit tellus mauris a diam maecenas sed. Sem fringilla ut morbi 
+                    tincidunt augue interdum. Elit pellentesque habitant morbi tristique. Dignissim cras tincidunt lobortis feugiat vivamus at. Nisl condimentum id venenatis a condimentum vitae sapien pellentesque. 
+                    Sodales ut etiam sit amet nisl purus in mollis nunc. Erat imperdiet sed euismod nisi. Proin fermentum leo vel orci. Magna fermentum iaculis eu non.
+                    <br><br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu tincidunt tortor aliquam nulla facilisi. Diam ut venenatis tellus in metus 
+                    vulputate eu. Pulvinar elementum integer enim neque volutpat ac tincidunt vitae. Vestibulum mattis ullamcorper velit sed. Nisi vitae suscipit tellus mauris a diam maecenas sed. Sem fringilla ut morbi 
+                    tincidunt augue interdum. Elit pellentesque habitant morbi tristique. Dignissim cras tincidunt lobortis feugiat vivamus at. Nisl condimentum id venenatis a condimentum vitae sapien pellentesque. 
+                    Sodales ut etiam sit amet nisl purus in mollis nunc. Erat imperdiet sed euismod nisi. Proin fermentum leo vel orci. Magna fermentum iaculis eu non.
+                    <br><br>
+                    ⚡︎ ⚡︎ ⚡︎  ⚡︎ ⚡︎ ⚡︎  ⚡︎ ⚡︎ ⚡︎  ⚡︎ ⚡︎ ⚡︎  ⚡︎ ⚡︎ ⚡︎
+                  </p>
+                  <p class="titre">Chapitre 3</p>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu tincidunt tortor aliquam nulla facilisi. Diam ut venenatis tellus in metus 
+                    vulputate eu. Pulvinar elementum integer enim neque volutpat ac tincidunt vitae. Vestibulum mattis ullamcorper velit sed. Nisi vitae suscipit tellus mauris a diam maecenas sed. Sem fringilla ut morbi 
+                    tincidunt augue interdum. Elit pellentesque habitant morbi tristique. Dignissim cras tincidunt lobortis feugiat vivamus at. Nisl condimentum id venenatis a condimentum vitae sapien pellentesque. 
+                    Sodales ut etiam sit amet nisl purus in mollis nunc. Erat imperdiet sed euismod nisi. Proin fermentum leo vel orci. Magna fermentum iaculis eu non.
+                    <br><br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu tincidunt tortor aliquam nulla facilisi. Diam ut venenatis tellus in metus 
+                    vulputate eu. Pulvinar elementum integer enim neque volutpat ac tincidunt vitae. Vestibulum mattis ullamcorper velit sed. Nisi vitae suscipit tellus mauris a diam maecenas sed. Sem fringilla ut morbi 
+                    tincidunt augue interdum. Elit pellentesque habitant morbi tristique. Dignissim cras tincidunt lobortis feugiat vivamus at. Nisl condimentum id venenatis a condimentum vitae sapien pellentesque. 
+                    Sodales ut etiam sit amet nisl purus in mollis nunc. Erat imperdiet sed euismod nisi. Proin fermentum leo vel orci. Magna fermentum iaculis eu non.
+                    <br><br>
+                    ⚡︎ ⚡︎ ⚡︎  ⚡︎ ⚡︎ ⚡︎  ⚡︎ ⚡︎ ⚡︎  ⚡︎ ⚡︎ ⚡︎  ⚡︎ ⚡︎ ⚡︎
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="tab-pane fade" id="nav-trois" role="tabpanel" aria-labelledby="nav-trois-tab">Blabla Content 3</div>
-        </div>        
-      </div>
+          <div class="tab-pane fade" id="v-pills-rencontre" role="tabpanel" aria-labelledby="v-pills-rencontre-tab">      
+            <div class="content-rela">
+              <ul class="nav nav-pills mb-3" id="rela-tab1" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="rela1" data-toggle="pill" href="#rela-1" role="tab" aria-controls="rela-1" aria-selected="false"><img src="./img/relations/No.png"></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="rela2" data-toggle="pill" href="#rela-2" role="tab" aria-controls="rela-2" aria-selected="false"><img src="./img/relations/No.png"></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="rela3" data-toggle="pill" href="#rela-3" role="tab" aria-controls="rela-3" aria-selected="true"><img src="./img/relations/No.png"></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="rela4" data-toggle="pill" href="#rela-4" role="tab" aria-controls="rela-4" aria-selected="false"><img src="./img/relations/No.png"></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="rela5" data-toggle="pill" href="#rela-5" role="tab" aria-controls="rela-5" aria-selected="false"><img src="./img/relations/No.png"></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="rela6" data-toggle="pill" href="#rela-6" role="tab" aria-controls="rela-6" aria-selected="false"><img src="./img/relations/No.png"></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="rela7" data-toggle="pill" href="#rela-7" role="tab" aria-controls="rela-7" aria-selected="false"><img src="./img/relations/No.png"></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="rela8" data-toggle="pill" href="#rela-8" role="tab" aria-controls="rela-8" aria-selected="false"><img src="./img/relations/No.png"></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="rela9" data-toggle="pill" href="#rela-9" role="tab" aria-controls="rela-9" aria-selected="false"><img src="./img/relations/No.png"></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="rela10" data-toggle="pill" href="#rela-10" role="tab" aria-controls="rela-10" aria-selected="false"><img src="./img/relations/No.png"></a>
+                </li>
+              </ul>
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="rela-1" role="tabpanel" aria-labelledby="rela1">
+                  <div class="grid-pkmn">
+                    <div class="pkmn-espece">Prénom Nom • Type relation • Age • Autre <img class="type" src="./img/types/"/><img class="type" src="./img/types/"/></div>
+                    <div class="avatar-rela"><img src="./img/relations/NoAvatar.png"></div>
+                    <div class="rela-infos">
+                      <div class="center"><img src="./img/pokemon/mini/ball.png"> <img src="./img/pokemon/mini/ball.png"> <img src="./img/pokemon/mini/ball.png"> <img src="./img/pokemon/mini/ball.png"> <img src="./img/pokemon/mini/ball.png"></div><hr>
+                      • Blabla <span>blabla</span> blabla<br/>
+                      • Blabla <span>blabla</span> blabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/><br/>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="rela-2" role="tabpanel" aria-labelledby="rela2">
+                  <div class="grid-pkmn">
+                    <div class="pkmn-espece">Prénom Nom • Type relation • Age • Autre <img class="type" src="./img/types/"/><img class="type" src="./img/types/"/></div>
+                    <div class="avatar-rela"><img src="./img/relations/NoAvatar.png"></div>
+                    <div class="rela-infos">
+                      <div class="center"><img src="./img/pokemon/mini/ball.png"> <img src="./img/pokemon/mini/ball.png"> <img src="./img/pokemon/mini/ball.png"> <img src="./img/pokemon/mini/ball.png"> <img src="./img/pokemon/mini/ball.png"></div><hr>
+                      • Blabla <span>blabla</span> blabla<br/>
+                      • Blabla <span>blabla</span> blabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/><br/>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="rela-3" role="tabpanel" aria-labelledby="rela3">
+                  <div class="grid-pkmn">
+                    <div class="pkmn-espece">Prénom Nom • Type relation • Age • Autre <img class="type" src="./img/types/"/><img class="type" src="./img/types/"/></div>
+                    <div class="avatar-rela"><img src="./img/relations/NoAvatar.png"></div>
+                    <div class="rela-infos">
+                      <div class="center"><img src="./img/pokemon/mini/ball.png"> <img src="./img/pokemon/mini/ball.png"> <img src="./img/pokemon/mini/ball.png"> <img src="./img/pokemon/mini/ball.png"> <img src="./img/pokemon/mini/ball.png"></div><hr>
+                      • Blabla <span>blabla</span> blabla<br/>
+                      • Blabla <span>blabla</span> blabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/><br/>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="rela-4" role="tabpanel" aria-labelledby="rela4">
+                  <div class="grid-pkmn">
+                    <div class="pkmn-espece">Prénom Nom • Type relation • Age • Autre <img class="type" src="./img/types/"/><img class="type" src="./img/types/"/></div>
+                    <div class="avatar-rela"><img src="./img/relations/NoAvatar.png"></div>
+                    <div class="rela-infos">
+                      <div class="center"><img src="./img/pokemon/mini/ball.png"> <img src="./img/pokemon/mini/ball.png"> <img src="./img/pokemon/mini/ball.png"> <img src="./img/pokemon/mini/ball.png"> <img src="./img/pokemon/mini/ball.png"></div><hr>
+                      • Blabla <span>blabla</span> blabla<br/>
+                      • Blabla <span>blabla</span> blabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/><br/>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="rela-5" role="tabpanel" aria-labelledby="rela5">
+                  <div class="grid-pkmn">
+                    <div class="pkmn-espece">Prénom Nom • Type relation • Age • Autre <img class="type" src="./img/types/"/><img class="type" src="./img/types/"/></div>
+                    <div class="avatar-rela"><img src="./img/relations/NoAvatar.png"></div>
+                    <div class="rela-infos">
+                      <div class="center"><img src="./img/pokemon/mini/ball.png"> <img src="./img/pokemon/mini/ball.png"> <img src="./img/pokemon/mini/ball.png"> <img src="./img/pokemon/mini/ball.png"> <img src="./img/pokemon/mini/ball.png"></div><hr>
+                      • Blabla <span>blabla</span> blabla<br/>
+                      • Blabla <span>blabla</span> blabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/><br/>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="rela-6" role="tabpanel" aria-labelledby="rela6">
+                  <div class="grid-pkmn">
+                    <div class="pkmn-espece">Prénom Nom • Type relation • Age • Autre <img class="type" src="./img/types/"/><img class="type" src="./img/types/"/></div>
+                    <div class="avatar-rela"><img src="./img/relations/NoAvatar.png"></div>
+                    <div class="rela-infos">
+                      <div class="center"><img src="./img/pokemon/mini/ball.png"> <img src="./img/pokemon/mini/ball.png"> <img src="./img/pokemon/mini/ball.png"> <img src="./img/pokemon/mini/ball.png"> <img src="./img/pokemon/mini/ball.png"></div><hr>
+                      • Blabla <span>blabla</span> blabla<br/>
+                      • Blabla <span>blabla</span> blabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/><br/>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="rela-7" role="tabpanel" aria-labelledby="rela7">
+                  <div class="grid-pkmn">
+                    <div class="pkmn-espece">Prénom Nom • Type relation • Age • Autre <img class="type" src="./img/types/"/><img class="type" src="./img/types/"/></div>
+                    <div class="avatar-rela"><img src="./img/relations/NoAvatar.png"></div>
+                    <div class="rela-infos">
+                      <div class="center"><img src="./img/pokemon/mini/ball.png"> <img src="./img/pokemon/mini/ball.png"> <img src="./img/pokemon/mini/ball.png"> <img src="./img/pokemon/mini/ball.png"> <img src="./img/pokemon/mini/ball.png"></div><hr>
+                      • Blabla <span>blabla</span> blabla<br/>
+                      • Blabla <span>blabla</span> blabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/><br/>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="rela-8" role="tabpanel" aria-labelledby="rela8">
+                  <div class="grid-pkmn">
+                    <div class="pkmn-espece">Prénom Nom • Type relation • Age • Autre <img class="type" src="./img/types/"/><img class="type" src="./img/types/"/></div>
+                    <div class="avatar-rela"><img src="./img/relations/NoAvatar.png"></div>
+                    <div class="rela-infos">
+                      <div class="center"><img src="./img/pokemon/mini/ball.png"> <img src="./img/pokemon/mini/ball.png"> <img src="./img/pokemon/mini/ball.png"> <img src="./img/pokemon/mini/ball.png"> <img src="./img/pokemon/mini/ball.png"></div><hr>
+                      • Blabla <span>blabla</span> blabla<br/>
+                      • Blabla <span>blabla</span> blabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/><br/>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="rela-9" role="tabpanel" aria-labelledby="rela9">
+                  <div class="grid-pkmn">
+                    <div class="pkmn-espece">Prénom Nom • Type relation • Age • Autre <img class="type" src="./img/types/"/><img class="type" src="./img/types/"/></div>
+                    <div class="avatar-rela"><img src="./img/relations/NoAvatar.png"></div>
+                    <div class="rela-infos">
+                      <div class="center"><img src="./img/pokemon/mini/ball.png"> <img src="./img/pokemon/mini/ball.png"> <img src="./img/pokemon/mini/ball.png"> <img src="./img/pokemon/mini/ball.png"> <img src="./img/pokemon/mini/ball.png"></div><hr>
+                      • Blabla <span>blabla</span> blabla<br/>
+                      • Blabla <span>blabla</span> blabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/><br/>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="rela-10" role="tabpanel" aria-labelledby="rela10">
+                  <div class="grid-pkmn">
+                    <div class="pkmn-espece">Prénom Nom • Type relation • Age • Autre <img class="type" src="./img/types/"/><img class="type" src="./img/types/"/></div>
+                    <div class="avatar-rela"><img src="./img/relations/NoAvatar.png"></div>
+                    <div class="rela-infos">
+                      <div class="center"><img src="./img/pokemon/mini/ball.png"> <img src="./img/pokemon/mini/ball.png"> <img src="./img/pokemon/mini/ball.png"> <img src="./img/pokemon/mini/ball.png"> <img src="./img/pokemon/mini/ball.png"></div><hr>
+                      • Blabla <span>blabla</span> blabla<br/>
+                      • Blabla <span>blabla</span> blabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/>
+                      • Blablablabla<br/><br/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="v-pills-kdo" role="tabpanel" aria-labelledby="v-pills-kdo-tab">
+            <div class="content-pkmn">
+              Blabla les kdo
+            </div>
+          </div>
+        </div>
     </div>
-    <div class="tab-pane fade show" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-      Blabla profile
-    </div>
-    <div class="tab-pane fade show" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-      Blabla Contact
-    </div>
-  </div>
-  <!-- Javascript -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-  <script src="script/heart.js"></script>
+    <!-- Javascript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </body>
 </html>
