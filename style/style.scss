@@ -193,6 +193,34 @@ $width-sidebar: 135px;
             border: 1px solid $color-black;
 
             .titre {
+                color: $color-main;
+                text-transform: uppercase;
+                font-size: 14px;
+            }
+
+            .perso-ava {
+                text-align:right;
+                font-size:9px;
+                margin-top: -5px;
+            }
+
+            span {
+                color: $color-main;
+                font-weight: bold;
+            }
+        }
+
+        .descri-histoire {
+            flex: 1 1 auto;
+            height: 477px;
+            overflow: auto;
+            padding: 5px 10px 5px 5px;
+            font-size:11px;
+            text-align: justify;
+            border-radius: 10px;
+            border: 1px solid $color-black;
+
+            .titre {
                 color: darkblue;
                 text-transform: uppercase;
                 font-size: 14px;
@@ -205,9 +233,9 @@ $width-sidebar: 135px;
             }
         }
 
-        .descri-histoire {
+        .descri-aventure {
             flex: 1 1 auto;
-            height: 475px;
+            height: 243px;
             overflow: auto;
             padding: 5px 10px 5px 5px;
             font-size:11px;
@@ -426,7 +454,7 @@ $width-sidebar: 135px;
                     font-size: 11px;
 
                     &.acier {border-left:5px solid #adadc6;}
-                    &.combat {border-left:5px solid #a55239;}
+                    &.combat {border-left:5px solid #FF8100;}
                     &.dragon {border-left:5px solid #8858f6;}
                     &.eau {border-left:5px solid #399cff;}
                     &.electrik {border-left:5px solid #ffc631;}
@@ -451,7 +479,7 @@ $width-sidebar: 135px;
                 grid-row: 4;
                 border-radius: 5px;
                 border: solid 1px $color-black;
-                height: 70px;
+                height: 68px;
                 padding: 3px 15px;
                 overflow: auto;
                 letter-spacing: 6px;
@@ -626,7 +654,7 @@ $width-sidebar: 135px;
             border-radius: 5px;
 
             &:first-of-type {
-                margin-left:25px;
+                margin-left:15px;
             }
         }
 
@@ -634,18 +662,18 @@ $width-sidebar: 135px;
 
     .contenu-sac {
         display: none;
-        width: 410px; 
-        height: 200px;
+        width: 415px; 
+        height: 150px;
         padding: 5px;
         border: 1px solid $color-black;
-        border-radius : 5px;
+        border-radius : 10px;
         color: black;
         overflow: auto;
         line-height : 22px;
         font-family: 'PT Sans', sans-serif;
         font-size:10px;
         letter-spacing: 3px;
-        margin: 0 18px;
+        margin: 0 2px;
 
         img {
             width: 25px;
@@ -760,6 +788,40 @@ $width-sidebar: 135px;
         text-align: justify;
         border-radius: 10px;
         border: 1px solid $color-black;
+
+        .titre {
+            color: $color-main;
+            text-transform: uppercase;
+            font-size: 12px;
+        }
+
+        .validate {
+            color: $color-validate;
+        }
+
+        .fail {
+            color: $color-fail;
+        }
+
+        .encours {
+            color: $color-progress;
+        }
+    }
+
+    .descri-duo {
+        flex: 1 1 auto;
+        height: 112px;
+        overflow: auto;
+        padding: 5px 10px 5px 5px;
+        font-size:11px;
+        text-align: justify;
+        border-radius: 10px;
+        border: 1px solid $color-black;
+        margin-top: 20px;
+
+        span {
+            font-weight: bold;
+        }
 
         .titre {
             color: $color-main;
