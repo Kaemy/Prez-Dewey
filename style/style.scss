@@ -1,6 +1,7 @@
 /* VARIABLES */
 $color-main : #00132a;
 $color-black: rgb(0, 0, 0);
+$color-red: #bb3f3f;
 $color-white: rgb(255, 255, 255);
 $color-degrade: linear-gradient(0.25turn, #00132a, #0b152d, #ff0000);
 $color-validate: rgb(0, 179, 41);
@@ -402,7 +403,7 @@ $width-sidebar: 135px;
                 font-size: 11px;
 
                 span {
-                    color: #2890ac;
+                    color: $color-red;
                 }
             }
 
