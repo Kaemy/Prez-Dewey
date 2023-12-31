@@ -195,6 +195,10 @@ body strong {
   font-size: 9px;
   margin-top: -5px;
 }
+.content-tc .blocdescri .descri-histoire span {
+  color: #00132a;
+  font-weight: bold;
+}
 .content-tc .blocdescri .descri-aventure {
   flex: 1 1 auto;
   height: 243px;
@@ -214,6 +218,10 @@ body strong {
   text-align: right;
   font-size: 9px;
   margin-top: -5px;
+}
+.content-tc .blocdescri .descri-aventure span {
+  color: #00132a;
+  font-weight: bold;
 }
 .content-tc .bloc-card {
   display: flex;
